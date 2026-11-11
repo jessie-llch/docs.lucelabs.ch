@@ -1,5 +1,7 @@
 /* Lucelabs Hilfe: colours of the six themes of lucelabs.ch (themes.css there) and the theme picker.
-   Mintlify reads its colours from these variables as "r g b". Midnight is the default and matches docs.json. */
+   Mintlify reads its colours from these variables as "r g b". "Schwarz-Weiss mit Violett" is the default and matches docs.json. */
+
+html[data-palette="violet"]   { --primary: 124 58 237; --primary-light: 183 148 255; --primary-dark: 91 33 182; --background-light: 255 255 255; --background-dark: 10 10 10; }
 
 html[data-palette="midnight"] { --primary: 54 92 133; --primary-light: 169 196 226; --primary-dark: 23 36 58; --background-light: 247 248 250; --background-dark: 16 23 34; }
 html[data-palette="burgundy"] { --primary: 120 63 80; --primary-light: 214 169 183; --primary-dark: 48 33 38; --background-light: 250 248 247; --background-dark: 27 20 24; }

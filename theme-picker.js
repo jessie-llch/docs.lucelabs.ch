@@ -105,6 +105,15 @@
       menu.hidden = !open;
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
       if (open) {
+        // fixed to the window, so the sidebar cannot cut it off; below the button, kept 16px inside the window
+        var r = btn.getBoundingClientRect();
+        var w = menu.offsetWidth;
+        var h = menu.offsetHeight;
+        var left = Math.min(Math.max(16, r.left - 8), window.innerWidth - w - 16);
+        var top = r.bottom + 8;
+        if (top + h > window.innerHeight - 16) top = Math.max(16, r.top - h - 8);
+        menu.style.left = left + 'px';
+        menu.style.top = top + 'px';
         var sel = menu.querySelector('[aria-checked="true"]') || menu.querySelector('.ll-pal-opt');
         sel.focus();
       }
@@ -139,6 +148,11 @@
   document.addEventListener('click', function (e) {
     if (!e.target.closest || !e.target.closest('.ll-pal')) closeAll(null);
   });
+  window.addEventListener('resize', function () { closeAll(null); });
+  window.addEventListener('scroll', function (e) {
+    if (e.target && e.target.closest && e.target.closest('.ll-pal-menu')) return;
+    closeAll(null);
+  }, true);
   var pending = false;
   new MutationObserver(function () {
     if (pending) return;

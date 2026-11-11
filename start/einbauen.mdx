@@ -1,0 +1,47 @@
+---
+title: "Auf die Website bringen"
+description: "Eine Zeile Code. Für jede Website."
+---
+
+Den Code finden Sie im Dashboard unter **Einbauen**. Er sieht so aus:
+
+```html
+<script src="https://lucelabs.ch/js/chatbot-embed.js" data-chatbot-id="IHRE-ID" defer></script>
+```
+
+Fügen Sie ihn auf jeder Seite ein, am besten kurz vor `</body>`. Unten rechts erscheint dann der Chat-Knopf.
+
+<Tabs>
+  <Tab title="WordPress">
+    Laden Sie unter **Einbauen** das Plugin für Ihren Assistenten herunter. In WordPress: **Plugins › Installieren › Plugin hochladen**, dann aktivieren. Fertig.
+
+    Das gilt auch für WooCommerce-Shops.
+  </Tab>
+  <Tab title="Wix">
+    **Einstellungen › Benutzerdefinierter Code › Code hinzufügen**. Code einfügen, «Alle Seiten» und «Body - Ende» wählen.
+  </Tab>
+  <Tab title="Squarespace">
+    **Einstellungen › Erweitert › Code-Injection › Footer**. Code einfügen und speichern. Code-Injection gibt es ab dem Business-Plan von Squarespace.
+  </Tab>
+  <Tab title="Shopify">
+    **Onlineshop › Themes › Code bearbeiten**, Datei `theme.liquid` öffnen. Code direkt vor `</body>` einfügen und speichern.
+  </Tab>
+  <Tab title="Webflow">
+    **Site settings › Custom code › Footer code**. Code einfügen, speichern und die Website veröffentlichen.
+  </Tab>
+  <Tab title="Weitere">
+    Für Jimdo, Framer, Joomla und TYPO3 zeigt Ihnen das Dashboard unter **Einbauen** eine eigene Anleitung. Lucelabs erkennt meist selbst, welches System Ihre Website nutzt.
+  </Tab>
+</Tabs>
+
+## Läuft er?
+
+Unter **Einbauen** prüft «Ist er live?», ob der Chat auf Ihrer Website erscheint.
+
+<Tip>
+  Macht Ihre Website jemand anders? Senden Sie ihm Code und Anleitung direkt aus dem Dashboard per E-Mail.
+</Tip>
+
+<Warning>
+  Der Chat erscheint nur auf den Websites, die Sie eingetragen haben. Subdomains wie `shop.ihr-betrieb.ch` sind eingeschlossen.
+</Warning>

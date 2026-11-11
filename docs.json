@@ -1,72 +1,62 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Lucelabs Hilfe",
+  "description": "Hilfe zu Lucelabs, dem Schweizer Assistenten für Unternehmens-Websites.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#111111",
+    "light": "#f5f5f5",
+    "dark": "#111111"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+  "appearance": {
+    "default": "system"
   },
   "navbar": {
     "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@mintlify.com"
-      }
+      { "label": "Kontakt", "href": "https://lucelabs.ch/contact/" },
+      { "label": "Status", "href": "https://lucelabs.ch/status/" }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Zum Dashboard",
+      "href": "https://lucelabs.ch/dashboard/"
     }
   },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+  "navigation": {
+    "groups": [
+      {
+        "group": "Los geht's",
+        "pages": ["index", "start/assistent-erstellen", "start/einbauen", "start/testen"]
+      },
+      {
+        "group": "Ihr Assistent",
+        "pages": [
+          "assistent/wissen",
+          "assistent/fragen-und-antworten",
+          "assistent/antworten",
+          "assistent/aussehen",
+          "assistent/sprachen",
+          "assistent/offene-fragen"
+        ]
+      },
+      {
+        "group": "Funktionen",
+        "pages": ["funktionen/termine", "funktionen/shop", "funktionen/newsletter", "funktionen/verbindungen"]
+      },
+      {
+        "group": "Konto und Preise",
+        "pages": ["konto/plaene", "konto/testphase", "konto/zusatzgespraeche", "konto/datenschutz"]
+      },
+      {
+        "group": "Hilfe",
+        "pages": ["haeufige-fragen"]
+      }
     ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "website": "https://lucelabs.ch"
     }
   }
 }

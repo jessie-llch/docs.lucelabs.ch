@@ -1,87 +1,110 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "maple",
-  "name": "Lucelabs Hilfe",
-  "description": "Hilfe zu Lucelabs, dem Schweizer Assistenten für Unternehmens-Websites.",
-  "colors": {
-    "primary": "#365c85",
-    "light": "#a9c4e2",
-    "dark": "#17243a"
-  },
-  "background": {
-    "color": {
-      "light": "#f7f8fa",
-      "dark": "#101722"
-    }
-  },
-  "logo": {
-    "light": "/logo/dark-on-light.png",
-    "dark": "/logo/light-on-dark.png",
-    "href": "https://docs.lucelabs.ch"
-  },
-  "fonts": {
-    "heading": {
-      "family": "Nohemi",
-      "weight": 600,
-      "source": "/fonts/Nohemi-SemiBold.woff2",
-      "format": "woff2"
+    "$schema": "https://mintlify.com/docs.json",
+    "theme": "maple",
+    "name": "Lucelabs Hilfe",
+    "description": "Hilfe zu Lucelabs, dem Schweizer Assistenten für Unternehmens-Websites.",
+    "colors": {
+        "primary": "#c2410c",
+        "light": "#ff7a33",
+        "dark": "#1a1a1a"
     },
-    "body": {
-      "family": "Nohemi",
-      "weight": 400,
-      "source": "/fonts/Nohemi-Regular.woff2",
-      "format": "woff2"
-    }
-  },
-  "favicon": "/favicon.svg",
-  "appearance": {
-    "default": "system"
-  },
-  "navbar": {
-    "links": [
-      { "label": "Kontakt", "href": "https://lucelabs.ch/contact/" },
-      { "label": "Status", "href": "https://lucelabs.ch/status/" }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Zum Dashboard",
-      "href": "https://lucelabs.ch/dashboard/"
-    }
-  },
-  "navigation": {
-    "groups": [
-      {
-        "group": "Los geht's",
-        "pages": ["index", "start/assistent-erstellen", "start/einbauen", "start/testen"]
-      },
-      {
-        "group": "Ihr Assistent",
-        "pages": [
-          "assistent/wissen",
-          "assistent/fragen-und-antworten",
-          "assistent/antworten",
-          "assistent/aussehen",
-          "assistent/sprachen",
-          "assistent/offene-fragen"
+    "background": {
+        "color": {
+            "light": "#fafaf8",
+            "dark": "#0e0e0e"
+        }
+    },
+    "logo": {
+        "light": "/logo/dark-on-light.png",
+        "dark": "/logo/light-on-dark.png",
+        "href": "https://docs.lucelabs.ch"
+    },
+    "fonts": {
+        "heading": {
+            "family": "Nohemi",
+            "weight": 600,
+            "source": "/fonts/Nohemi-SemiBold.woff2",
+            "format": "woff2"
+        },
+        "body": {
+            "family": "Nohemi",
+            "weight": 400,
+            "source": "/fonts/Nohemi-Regular.woff2",
+            "format": "woff2"
+        }
+    },
+    "favicon": "/favicon.svg",
+    "appearance": {
+        "default": "system"
+    },
+    "navbar": {
+        "links": [
+            {
+                "label": "Kontakt",
+                "href": "https://lucelabs.ch/contact/"
+            },
+            {
+                "label": "Status",
+                "href": "https://lucelabs.ch/status/"
+            }
+        ],
+        "primary": {
+            "type": "button",
+            "label": "Zum Dashboard",
+            "href": "https://lucelabs.ch/dashboard/"
+        }
+    },
+    "navigation": {
+        "groups": [
+            {
+                "group": "Los geht's",
+                "pages": [
+                    "index",
+                    "start/assistent-erstellen",
+                    "start/einbauen",
+                    "start/testen"
+                ]
+            },
+            {
+                "group": "Ihr Assistent",
+                "pages": [
+                    "assistent/wissen",
+                    "assistent/fragen-und-antworten",
+                    "assistent/antworten",
+                    "assistent/aussehen",
+                    "assistent/sprachen",
+                    "assistent/offene-fragen"
+                ]
+            },
+            {
+                "group": "Funktionen",
+                "pages": [
+                    "funktionen/termine",
+                    "funktionen/shop",
+                    "funktionen/newsletter",
+                    "funktionen/verbindungen"
+                ]
+            },
+            {
+                "group": "Konto und Preise",
+                "pages": [
+                    "konto/plaene",
+                    "konto/testphase",
+                    "konto/zusatzgespraeche",
+                    "konto/datenschutz"
+                ]
+            },
+            {
+                "group": "Hilfe",
+                "pages": [
+                    "haeufige-fragen"
+                ]
+            }
         ]
-      },
-      {
-        "group": "Funktionen",
-        "pages": ["funktionen/termine", "funktionen/shop", "funktionen/newsletter", "funktionen/verbindungen"]
-      },
-      {
-        "group": "Konto und Preise",
-        "pages": ["konto/plaene", "konto/testphase", "konto/zusatzgespraeche", "konto/datenschutz"]
-      },
-      {
-        "group": "Hilfe",
-        "pages": ["haeufige-fragen"]
-      }
-    ]
-  },
-  "footer": {
-    "socials": {
-      "website": "https://lucelabs.ch"
+    },
+    "footer": {
+        "socials": {
+            "website": "https://lucelabs.ch"
+        }
     }
-  }
 }

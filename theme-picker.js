@@ -3,8 +3,7 @@
 (function () {
   var KEY = 'lucelabs-palette';
   var THEMES = [
-    { id: 'violet', name: 'Schwarz-Weiss', note: 'Mit einem violetten Leuchten. Der Standard.', c: ['#0a0a0a', '#b794ff', '#ffffff'] },
-    { id: 'midnight', name: 'Mitternacht', note: 'Ruhiges Marineblau.', c: ['#17243a', '#a9c4e2', '#f7f8fa'] },
+    { id: 'midnight', name: 'Mitternacht', note: 'Ruhiges Marineblau. Der Standard.', c: ['#17243a', '#a9c4e2', '#f7f8fa'] },
     { id: 'burgundy', name: 'Burgund', note: 'Warm und elegant.', c: ['#302126', '#d6a9b7', '#faf8f7'] },
     { id: 'purple', name: 'Violett', note: 'Sanft und kreativ.', c: ['#30264a', '#c4b2e5', '#f8f7fb'] },
     { id: 'petrol', name: 'Petrol und Sand', note: 'Frisches Petrol, warmer Sand.', c: ['#0e6e7a', '#e3b26b', '#f7f6f2'] },
@@ -14,7 +13,7 @@
   var html = document.documentElement;
 
   function read() {
-    try { return localStorage.getItem(KEY) || 'violet'; } catch (e) { return 'violet'; }
+    try { return localStorage.getItem(KEY) || 'midnight'; } catch (e) { return 'midnight'; }
   }
   function byId(id) {
     for (var i = 0; i < THEMES.length; i++) if (THEMES[i].id === id) return THEMES[i];

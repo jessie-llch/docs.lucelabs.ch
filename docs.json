@@ -4,14 +4,14 @@
   "name": "Lucelabs Hilfe",
   "description": "Hilfe zu Lucelabs, dem Schweizer Assistenten für Unternehmens-Websites.",
   "colors": {
-    "primary": "#7c3aed",
-    "light": "#b794ff",
-    "dark": "#5b21b6"
+    "primary": "#365c85",
+    "light": "#a9c4e2",
+    "dark": "#17243a"
   },
   "background": {
     "color": {
-      "light": "#ffffff",
-      "dark": "#0a0a0a"
+      "light": "#f7f8fa",
+      "dark": "#101722"
     }
   },
   "logo": {

@@ -1,0 +1,51 @@
+---
+title: "Brevo"
+description: "Newsletter-Anmeldungen aus dem Chat direkt in Ihre Brevo-Liste."
+---
+
+## Was es kann
+
+Meldet sich ein Besucher im Chat für Ihren Newsletter an und bestätigt seine Adresse, geht sie automatisch in Ihre Liste bei Brevo. Meldet er sich ab oder entfernen Sie die Adresse, wird sie auch dort entfernt.
+
+## Was Sie brauchen
+
+- Ein Brevo-Konto mit einer Kontaktliste.
+- Die [Newsletter-Anmeldung](/funktionen/newsletter) im Chat, eingeschaltet. In allen Plänen. Zählt nicht als Verbindung.
+
+## Einrichten
+
+<Steps>
+  <Step title="API-Schlüssel erstellen">
+    In Ihrem Brevo-Konto einen API-Schlüssel erstellen und kopieren.
+  </Step>
+  <Step title="Listen-ID kopieren">
+    Die ID der Liste, in die neue Adressen sollen. Sie steht in Brevo bei der Liste.
+  </Step>
+  <Step title="In Lucelabs eintragen">
+    Unter **Funktionen › Newsletter-Anmeldung › An Brevo oder Mailchimp senden** bei **Dienst** Brevo wählen, API-Schlüssel und Listen-ID eintragen und **Speichern**.
+  </Step>
+  <Step title="Prüfen">
+    Beim Speichern prüfen wir Schlüssel und Liste. Mit **Verbindung testen** prüfen Sie es jederzeit erneut.
+  </Step>
+</Steps>
+
+Adressen, die schon vorher bestätigt wurden, gehen beim Speichern ebenfalls an Brevo.
+
+## Was Besucher sehen
+
+Nur das Formular im Chat und die Bestätigungs-E-Mail. Von Brevo sehen sie nichts, bis Sie Ihren Newsletter senden.
+
+## Status
+
+| Meldung | Was Sie tun |
+| --- | --- |
+| **Verbunden. Bestätigte Adressen gehen in Ihre Liste.** | Nichts. |
+| **Der Schlüssel wurde abgelehnt.** | Schlüssel neu aus Brevo kopieren und eintragen. |
+| **Die Liste wurde nicht gefunden.** | Listen-ID prüfen. |
+| **Der Dienst hat nicht geantwortet.** | Später nochmals versuchen. Die Adressen bleiben in Lucelabs gespeichert. |
+
+Bei jeder Adresse in der Liste steht **gesendet** oder **noch nicht gesendet**.
+
+<Note>
+  Der Schlüssel wird verschlüsselt gespeichert und nie angezeigt. Mit **Gespeicherten Schlüssel löschen** entfernen Sie ihn. Brevo kann Daten ausserhalb der Schweiz speichern.
+</Note>

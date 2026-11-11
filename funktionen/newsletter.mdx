@@ -1,20 +1,37 @@
 ---
 title: "Newsletter"
-description: "Anmeldungen im Chat, direkt in Brevo oder Mailchimp."
+description: "Anmeldungen im Chat, auf Wunsch direkt in Brevo oder Mailchimp."
 ---
 
-Möchte ein Besucher Ihren Newsletter, meldet er sich im Chat an. Die Adresse geht in Ihre Liste bei **Brevo** oder **Mailchimp**.
+Besucher melden sich direkt im Chat für Ihren Newsletter an. Ihr Assistent erwähnt ihn nur, wenn jemand Interesse zeigt oder danach fragt. Es zählen nur Adressen, die über den Link in der E-Mail bestätigt wurden.
+
+## Einrichten
+
+Unter **Funktionen › Newsletter-Anmeldung**:
 
 <Steps>
-  <Step title="Schlüssel holen">
-    In Brevo oder Mailchimp einen API-Schlüssel erstellen. Bei Mailchimp gehört das Rechenzentrum dazu, zum Beispiel `-us21`.
+  <Step title="Einschalten">
+    **Newsletter-Anmeldung im Chat anbieten** einschalten.
   </Step>
-  <Step title="Liste wählen">
-    Die ID Ihrer Liste (Brevo) oder Ihrer Audience (Mailchimp) kopieren.
+  <Step title="Kurzer Text (freiwillig)">
+    Höchstens 200 Zeichen, zum Beispiel «Einmal im Monat: neue Events und Angebote.». Er steht im Formular und hilft dem Assistenten, den Newsletter passend zu erwähnen.
   </Step>
-  <Step title="Eintragen und testen">
-    Unter **Funktionen › Newsletter-Anmeldung** beides eintragen. Beim Speichern prüfen wir, ob Schlüssel und Liste stimmen. Mit **Test** senden Sie eine Probe.
+  <Step title="Link zu Ihrer Datenschutzerklärung">
+    Pflicht, mit `https://`. Der Link steht neben dem Kästchen für die Einwilligung. Ihre Datenschutzerklärung sollte die Newsletter-Anmeldung erwähnen.
+  </Step>
+  <Step title="An Brevo oder Mailchimp senden (freiwillig)">
+    Bestätigte Adressen gehen automatisch in Ihre Liste. [Brevo](/integrationen/brevo) · [Mailchimp](/integrationen/mailchimp)
   </Step>
 </Steps>
 
-Nur bestätigte Adressen werden übertragen. Der Status zeigt, wann zuletzt eine Adresse ankam oder was nicht klappt.
+## Was Besucher sehen
+
+Ein kleines Formular: E-Mail-Adresse und ein Kästchen «Ich möchte den Newsletter von … per E-Mail erhalten. Ich kann mich jederzeit wieder abmelden.» Nach **Anmelden** kommt eine E-Mail mit **Anmeldung bestätigen**. Erst damit ist die Adresse angemeldet. Abmelden geht jederzeit über den Link in jeder E-Mail.
+
+## Ihre Adressen
+
+Unter **Bestätigte Adressen** sehen Sie jede Adresse mit Datum. Mit **Als CSV herunterladen** nehmen Sie die Liste mit, mit **Entfernen** löschen Sie eine Adresse.
+
+<Note>
+  Unbestätigte Anmeldungen werden nach 30 Tagen gelöscht.
+</Note>

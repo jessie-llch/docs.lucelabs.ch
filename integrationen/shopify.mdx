@@ -1,0 +1,60 @@
+---
+title: "Shopify"
+description: "Chat im Shop, Produktkarten und direkt in den Warenkorb."
+---
+
+## Was es kann
+
+- **Chat auf jeder Seite** Ihres Shopify-Shops.
+- **Produktkarten:** Ihr Assistent erkennt Ihre Produkte beim Lesen des Shops: Name, Bild, Preis, Varianten. Fragt ein Besucher danach, zeigt er sie als Karte.
+- **In den Warenkorb:** Besucher wählen eine Variante und legen das Produkt aus dem Chat in den Warenkorb.
+
+Den Stand einer Bestellung kann Ihr Assistent bei Shopify nicht nachschlagen.
+
+## Was Sie brauchen
+
+| | |
+| --- | --- |
+| Shopify | Zugang zu **Onlineshop › Themes › Code bearbeiten** |
+| Lucelabs, Chat | alle Pläne |
+| Lucelabs, Produktkarten und Warenkorb | ab Medium, oder Basic mit der Zusatzoption «Tabellen, Statistiken und Karten» |
+
+## Einbauen
+
+<Steps>
+  <Step title="Code kopieren">
+    Auf der Seite Ihres Assistenten unter **Einbauen** auf **Code kopieren** klicken.
+  </Step>
+  <Step title="Theme-Code öffnen">
+    In Shopify **Onlineshop › Themes**, dann **…** › **Code bearbeiten**.
+  </Step>
+  <Step title="Code einfügen">
+    `layout › theme.liquid` öffnen, den Code direkt über `</body>` einfügen und **Speichern**.
+  </Step>
+  <Step title="Shop lesen lassen">
+    Unter **Wissen › Ihre Website** auf **Website jetzt lesen**. Danach steht dort, wie viele Produkte erkannt wurden.
+  </Step>
+</Steps>
+
+Steht Ihr Shop auf einer eigenen Domain, tragen Sie sie unter **Einbauen › Weitere Websites** ein.
+
+## Was Besucher sehen
+
+Eine Karte mit Bild, Name und Preis. Ein Tipp öffnet die Details mit Varianten, Lagerstand und **In den Warenkorb** oder **Produkt öffnen**. Ihr Assistent legt nie selbst etwas in den Warenkorb, bestellt oder bezahlt.
+
+## Wenn es nicht klappt
+
+<AccordionGroup>
+  <Accordion title="Es werden keine Produkte erkannt">
+    Lassen Sie den Shop neu lesen. Shopify-Themes veröffentlichen Produktdaten (schema.org) in der Regel von selbst. Fehlen sie in Ihrem Theme, erkennt Ihr Assistent die Produkte nicht.
+  </Accordion>
+  <Accordion title="Ein neuer Preis fehlt">
+    Neue oder geänderte Produkte erscheinen, nachdem der Shop neu gelesen wurde.
+  </Accordion>
+  <Accordion title="Keine Karten, nur Text">
+    Produktkarten gibt es ab Medium. In Basic nennt Ihr Assistent die Produkte im Text.
+  </Accordion>
+  <Accordion title="Nach einem Theme-Wechsel ist der Chat weg">
+    Der Code steht im alten Theme. Fügen Sie ihn im neuen Theme erneut in `theme.liquid` ein.
+  </Accordion>
+</AccordionGroup>

@@ -3,17 +3,54 @@ title: "Verbindungen"
 description: "Daten aus anderen Systemen, live im Chat."
 ---
 
-Mit Verbindungen holt Ihr Assistent Daten, die nicht auf Ihrer Website stehen. Live, im Moment der Frage.
+Mit Verbindungen schlägt Ihr Assistent Daten nach, die nicht auf Ihrer Website stehen. Live, im Moment der Frage.
 
 | Verbindung | Was Besucher fragen | Was Sie brauchen |
 | --- | --- | --- |
-| Bestellstatus (WooCommerce) | «Wo ist meine Bestellung 1042?» | WooCommerce-Zugangsschlüssel |
-| ÖV-Verbindungen (SBB, PostAuto & Co.) | «Wie komme ich von Bern zu Ihnen?» | nichts |
-| Wetter (Open-Meteo) | «Wie wird das Wetter am Samstag?» | eigener Open-Meteo-Schlüssel |
-| Calendly | «Wann haben Sie nächste Woche Zeit?» | Calendly-Konto |
-| Google-Kalender, öffentliche Termine | «Welche Events kommen demnächst?» | API-Schlüssel und Kalender-ID |
+| [Bestellstatus (WooCommerce)](/integrationen/woocommerce#bestellstatus) | «Wo ist meine Bestellung 1042?» | WooCommerce-Schlüssel mit Leserecht |
+| [Öffentlicher Verkehr (SBB, PostAuto …)](/integrationen/oev) | «Wie komme ich von Bern zu Ihnen?» | nichts |
+| [Wetterbericht (Open-Meteo)](/integrationen/open-meteo) | «Wie wird das Wetter am Samstag?» | eigener Open-Meteo-Schlüssel |
+| [Calendly – freie Termine](/integrationen/calendly) | «Wann haben Sie nächste Woche Zeit?» | Calendly-Konto |
+| [Google Kalender – öffentliche Anlässe](/integrationen/google-kalender) | «Welche Events kommen demnächst?» | Google-API-Schlüssel und Kalender-ID |
 
-Einrichten unter **Funktionen › Verbindungen**. Jede Verbindung hat eine Anleitung, einen **Test** und einen Schalter.
+## So richten Sie eine ein
+
+<Steps>
+  <Step title="System wählen">
+    Auf der Seite Ihres Assistenten unter **Funktionen › Verbindungen** das System wählen und die Angaben aus der Anleitung eintragen, zum Beispiel einen API-Schlüssel.
+  </Step>
+  <Step title="Testen">
+    **Testen** drücken. Sie sehen, was Ihr Assistent von Ihrem System erhalten würde.
+  </Step>
+  <Step title="Einschalten">
+    Ab jetzt nutzt Ihr Assistent die Verbindung im Chat. Ändern Sie die Angaben, testen Sie erneut.
+  </Step>
+</Steps>
+
+Mit **Hinweis für Ihren Assistenten** geben Sie eine kurze Regel mit, zum Beispiel «Nur den Stand einer Buchung nennen, nie den Preis.».
+
+Nur Inhaber und Admins Ihrer Firma können Verbindungen ändern.
+
+## Was Ihr Assistent kann und was nicht
+
+- Er liest nur Daten. Er bucht, ändert oder storniert nichts, sondern bietet dafür Ihr Kontaktformular an.
+- Er nutzt nur die Abfragen, die Sie einschalten.
+- Bei Personendaten fragt er zuerst nach den nötigen Angaben, etwa Bestellnummer und E-Mail, und zeigt nie Daten einer anderen Person.
+- Findet Ihr System nichts oder antwortet es nicht, sagt er das ehrlich, statt zu raten.
+
+Schlüssel und Passwörter werden verschlüsselt gespeichert und nie wieder angezeigt.
+
+## Ihre Verbindungen auf einen Blick
+
+Im Dashboard unter **Verbindungen** sehen Sie alles, womit Ihre Assistenten verbunden sind: Website-Code, Kalender, Newsletter und jede Verbindung, mit Status und einem Link zum Ändern.
+
+| Status | Bedeutung |
+| --- | --- |
+| **Eingeschaltet** | Ihr Assistent nutzt sie. |
+| **Ausgeschaltet** | Gespeichert, aber nicht im Einsatz. |
+| **Noch nicht getestet** | Zuerst **Testen**. |
+| **Letzter Test fehlgeschlagen** | Angaben prüfen, dann erneut testen. |
+| **Pausiert: nicht in Ihrem Plan** | Siehe unten. |
 
 ## Wie viele Verbindungen
 
@@ -24,8 +61,12 @@ Einrichten unter **Funktionen › Verbindungen**. Jede Verbindung hat eine Anlei
 | Extended | 3 |
 | Enterprise | 5 |
 
-Wechseln Sie in einen kleineren Plan, pausieren Verbindungen über dem Limit. Gelöscht wird nichts.
+Wechseln Sie in einen kleineren Plan, pausieren Verbindungen über dem Limit. Sie bleiben mit ihren Einstellungen gespeichert. Ihr Assistent sagt Besuchern dann, dass diese Funktion gerade nicht verfügbar ist.
 
-<Tip>
-  Ein anderes System, etwa Ihr Buchungs- oder Kassensystem? [Schreiben Sie uns](https://lucelabs.ch/contact/). Viele Systeme lassen sich anbinden.
-</Tip>
+## Ein anderes System
+
+Ihr Buchungs- oder Kassensystem fehlt? Unter **Anderes System anfragen** nennen Sie das System und was Ihr Assistent nachschlagen soll. Wir prüfen, ob wir es anbinden können, und melden uns. Den Stand sehen Sie unter **Ihre Anfragen**: Eingegangen, Wird geprüft, Geplant, Verfügbar oder Nicht möglich.
+
+<Note>
+  Kann ein angebundenes System Buchungen annehmen, zeigt Ihr Assistent dem Besucher zuerst eine Zusammenfassung. Gebucht wird erst mit **Buchung bestätigen**. Jede Buchung sehen Sie unter **Buchungen aus dem Chat**.
+</Note>

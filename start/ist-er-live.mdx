@@ -1,0 +1,47 @@
+---
+title: "Ist er live?"
+description: "Prüfen, ob Besucher Ihren Assistenten sehen."
+---
+
+Unter **Einbauen** klicken Sie auf **Ist er live?**. Lucelabs öffnet Ihre Website und sucht den Code Ihres Assistenten. Wir schauen auch selbst laufend nach und melden, sobald er live ist.
+
+## Was die Prüfung meldet
+
+| Meldung | Was es heisst | Was Sie tun |
+| --- | --- | --- |
+| **Auf … gefunden – Ihr Assistent ist live!** | Alles in Ordnung. | Nichts. |
+| **Noch nicht auf …** | Der Code fehlt auf der geprüften Seite. | Code auf jeder Seite einfügen (im Footer), speichern und die Website veröffentlichen. |
+| **… ist ein Lucelabs-Code, aber für einen anderen Assistenten** | Auf der Seite steht ein anderer Code. | Den Code von **Einbauen** dieses Assistenten verwenden. |
+| **… konnten wir nicht öffnen** | Die Adresse stimmt nicht oder die Seite ist nicht öffentlich. | Adresse unter **Einbauen › Ihre Website** prüfen. |
+| **Tragen Sie zuerst Ihre Website-Adresse ein** | Es ist keine Website eingetragen. | Adresse eintragen. |
+
+<Note>
+  Mit dem Google Tag Manager eingefügt? Dann sehen wir den Code von hier aus nicht. Öffnen Sie Ihre Website und schauen Sie, ob der Chat-Knopf erscheint.
+</Note>
+
+## In der Übersicht
+
+Die Übersicht im Dashboard zeigt bei jedem Assistenten **Live auf …**, **Pausiert** oder **Noch nicht auf Ihrer Website**, und wann der Chat zuletzt auf Ihrer Website geladen wurde.
+
+Fehlt etwas, steht dort, was zu tun ist:
+
+- **Die Adresse Ihrer Website fehlt.** Ohne sie bleibt der Chat überall verborgen.
+- **Der Assistent ist ausgeschaltet.** Einschalten unter **Wissen › Erweitert › Assistent eingeschaltet**.
+- **Kein aktiver Plan.** Der Chat erscheint nur mit einem Plan oder in der Testphase.
+
+## Der Chat-Knopf erscheint trotzdem nicht
+
+<AccordionGroup>
+  <Accordion title="Ein Cache-Plugin oder ein CDN">
+    Leeren Sie den Cache Ihrer Website, dann laden Sie die Seite neu.
+  </Accordion>
+  <Accordion title="Die Website ist nicht eingetragen">
+    Der Chat erscheint nur auf eingetragenen Websites. Steht der Chat auf einer zweiten Domain, tragen Sie sie unter **Weitere Websites** ein.
+  </Accordion>
+  <Accordion title="Ein Cookie-Hinweis deckt ihn ab">
+    Der Chat-Knopf sitzt unten rechts. Sie können ihn unter **Aussehen** an eine andere Ecke setzen.
+  </Accordion>
+  <Accordion title="Das Limit ist erreicht">
+    Sind die Gespräche Ihres Plans aufgebraucht, antwortet Ihr Assistent je nach Einstellung nicht mehr. [Mehr Gespräche als im Plan](/konto/zusatzgespraeche)
+  </Accordion>
+</AccordionGroup>

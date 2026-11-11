@@ -1,0 +1,74 @@
+---
+title: "WooCommerce"
+description: "Chat im Shop, Produktkarten, Warenkorb und Bestellstatus."
+---
+
+## Was es kann
+
+| Funktion | Plan |
+| --- | --- |
+| **Chat** auf jeder Seite, mit dem WordPress-Plugin | alle |
+| **Produktkarten:** Name, Bild, Preis, Varianten | ab Medium, oder Basic mit «Tabellen, Statistiken und Karten» |
+| **In den Warenkorb**, direkt aus dem Chat | wie Produktkarten |
+| **Bestellstatus:** «Wo ist meine Bestellung 1042?» | ab Medium, zählt als Verbindung |
+
+## Einbauen
+
+Nutzen Sie das WordPress-Plugin. Es funktioniert auch für WooCommerce-Shops. [WordPress](/integrationen/wordpress)
+
+Danach unter **Wissen › Ihre Website** auf **Website jetzt lesen**. Dort steht dann, wie viele Produkte erkannt wurden.
+
+## Produktkarten und Warenkorb
+
+Sie richten nichts ein. Fragt ein Besucher nach einem Produkt, zeigt Ihr Assistent es als Karte. Ein Tipp öffnet die Details mit Varianten, Lagerstand und **In den Warenkorb**. Preise kommen immer aus Ihrem Shop, nie von der KI. Ihr Assistent legt nie selbst etwas in den Warenkorb, bestellt oder bezahlt.
+
+## Bestellstatus
+
+Ihr Assistent nennt Kunden den Stand ihrer Bestellung. Dafür braucht es die Bestellnummer und die E-Mail-Adresse der Bestellung. Passen sie nicht zusammen, zeigt er nichts.
+
+### Was Sie brauchen
+
+- WooCommerce mit Zugang zu **WooCommerce › Einstellungen**.
+- Die Adresse Ihres Shops mit `https://`.
+- Den Plan Medium oder höher und eine freie Verbindung.
+
+### Einrichten
+
+<Steps>
+  <Step title="Schlüssel erstellen">
+    In WordPress **WooCommerce › Einstellungen › Erweitert › REST-API › Schlüssel hinzufügen**. Berechtigung **Lesen**.
+  </Step>
+  <Step title="Schlüssel kopieren">
+    Consumer Key (beginnt mit `ck_`) und Consumer Secret (beginnt mit `cs_`) kopieren. WooCommerce zeigt sie nur einmal.
+  </Step>
+  <Step title="In Lucelabs eintragen">
+    Auf der Seite Ihres Assistenten unter **Funktionen › Verbindungen** **WooCommerce – Bestellstatus** wählen. Adresse Ihres Shops, zum Beispiel `https://shop.beispiel.ch`, und beide Schlüssel eintragen.
+  </Step>
+  <Step title="Testen und einschalten">
+    **Testen** drücken, dann **Einschalten**.
+  </Step>
+</Steps>
+
+### Was Besucher sehen
+
+Fragt jemand nach einer Bestellung, bittet Ihr Assistent um Bestellnummer und E-Mail-Adresse. Stimmen beide, nennt er den Stand. Sonst sagt er, dass er nichts dazu findet.
+
+## Wenn es nicht klappt
+
+<AccordionGroup>
+  <Accordion title="Das System hat die Anmeldung abgelehnt">
+    Schlüssel falsch kopiert oder ohne Leserecht. Erstellen Sie einen neuen Schlüssel mit **Lesen** und tragen Sie beide Teile neu ein.
+  </Accordion>
+  <Accordion title="Die Adresse muss mit https:// beginnen">
+    Tragen Sie die Shop-Adresse vollständig ein, mit `https://`. Leitet die Adresse weiter, nehmen Sie die endgültige.
+  </Accordion>
+  <Accordion title="Das System war nicht erreichbar">
+    Ist Ihr Shop öffentlich erreichbar? Ein Wartungsmodus oder eine Firewall kann die Abfrage blockieren.
+  </Accordion>
+  <Accordion title="Es werden keine Produkte erkannt">
+    Lassen Sie die Website neu lesen. WooCommerce veröffentlicht Produktdaten (schema.org) in der Regel von selbst.
+  </Accordion>
+  <Accordion title="Ihr Plan enthält keine weitere Verbindung">
+    Basic hat keine Verbindungen, Medium eine. [Pläne](/konto/plaene)
+  </Accordion>
+</AccordionGroup>

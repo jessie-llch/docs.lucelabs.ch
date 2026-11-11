@@ -1,0 +1,52 @@
+---
+title: "Calendly"
+description: "Freie Termine aus Calendly im Chat. Gebucht wird auf Calendly."
+---
+
+## Was es kann
+
+Ihr Assistent zeigt freie Termine aus Ihrem Calendly und gibt dem Besucher den Link, um die gewählte Zeit zu buchen. Gebucht wird auf Calendly, nicht im Chat.
+
+## Was Sie brauchen
+
+- Ein Calendly-Konto mit einem Event-Typ, zum Beispiel «Erstgespräch, 30 Minuten». Ob Ihr Calendly-Plan den Zugriff über die API erlaubt, sehen Sie bei Calendly.
+- Den Plan Medium oder höher und eine freie [Verbindung](/funktionen/verbindungen).
+
+## Einrichten
+
+<Steps>
+  <Step title="Token erstellen">
+    In Calendly **Integrations & apps › API & webhooks** ein Personal Access Token erstellen. Lesezugriff genügt.
+  </Step>
+  <Step title="Event-Typ kopieren">
+    Die Adresse Ihres Event-Typs kopieren. Sie sieht so aus: `https://api.calendly.com/event_types/…`. Finden Sie sie nicht, [schreiben Sie uns](https://lucelabs.ch/contact/).
+  </Step>
+  <Step title="In Lucelabs eintragen">
+    Unter **Funktionen › Verbindungen** «Calendly – freie Termine» wählen und beides eintragen.
+  </Step>
+  <Step title="Testen und einschalten">
+    **Testen** drücken, dann **Einschalten**.
+  </Step>
+</Steps>
+
+## Was Besucher sehen
+
+Fragt jemand «Wann haben Sie nächste Woche Zeit?», nennt Ihr Assistent freie Zeiten und den Link zu Calendly. Dort bucht der Besucher wie gewohnt.
+
+<Note>
+  Calendly und die [Termine im Chat](/funktionen/termine) sind zwei Wege. Mit Calendly bleibt die Buchung bei Calendly.
+</Note>
+
+## Wenn es nicht klappt
+
+<AccordionGroup>
+  <Accordion title="Das System hat die Anmeldung abgelehnt">
+    Das Token ist falsch kopiert oder wurde in Calendly gelöscht. Erstellen Sie ein neues und tragen Sie es ein.
+  </Accordion>
+  <Accordion title="Das System hat die Daten nicht gefunden">
+    Die Adresse des Event-Typs stimmt nicht. Sie beginnt mit `https://api.calendly.com/event_types/`.
+  </Accordion>
+  <Accordion title="Es werden keine Zeiten gezeigt">
+    Prüfen Sie in Calendly, ob der Event-Typ aktiv ist und freie Zeiten hat.
+  </Accordion>
+</AccordionGroup>

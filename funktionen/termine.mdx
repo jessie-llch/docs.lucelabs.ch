@@ -1,29 +1,57 @@
 ---
-title: "Termine und Reservationen"
-description: "Besucher buchen direkt im Chat."
+title: "Termine"
+description: "Besucher sehen Ihre freien Zeiten und buchen direkt im Chat."
 ---
 
-Ihr Assistent zeigt freie Zeiten und nimmt Buchungen entgegen, für Termine oder Tische. Einrichten unter **Funktionen › Termine und Tische**.
+Fragt ein Besucher nach einem Termin, zeigt Ihr Assistent die freien Zeiten als Knöpfe unter der Antwort. Der Besucher wählt Tag und Zeit, gibt Name und E-Mail ein (Telefon freiwillig) und klickt auf **Diesen Termin buchen**.
 
 <Info>
-  Termine im Chat gibt es ab dem Plan Medium, oder bei Basic mit der Erweiterung «Tabellen, Statistiken und Karten».
+  Termine im Chat gibt es ab dem Plan Medium, oder bei Basic mit der Zusatzoption «Tabellen, Statistiken und Karten».
 </Info>
 
-## Ihre Buchungszeiten
+## Einrichten
 
-Legen Sie fest, wann gebucht werden kann und wie lange ein Termin dauert. Neue Buchungen sehen Sie im Dashboard.
+Unter **Funktionen › Termine und Tische**. Bei **Was im Chat gebucht wird** wählen Sie **Termine**. Für Restaurants gibt es stattdessen [Tischreservierungen](/funktionen/reservationen).
+
+| Einstellung | Beispiel |
+| --- | --- |
+| **Termine im Chat anbieten** | ein |
+| **Wie heisst der Termin?** | Erstberatung |
+| **Wie lange dauert er?** | 30 Minuten |
+| **Buchbar mindestens** | 24 Std. im Voraus |
+| **Buchbar bis** | 30 Tage im Voraus |
+| **Wann Sie Zeit haben** | pro Wochentag, von … bis … |
+| **Besucher erinnern** | Keine Erinnerung, 1 Stunde bis einige Tage vorher |
+
+## Nach der Buchung
+
+- Der Besucher erhält eine Bestätigung per E-Mail, mit **Ansehen oder absagen**.
+- Sie erhalten eine E-Mail «Neuer Termin» und sehen ihn unter **Kommende Termine**.
+- Eine Zeit kann nie doppelt gebucht werden.
+- Sagt der Besucher ab, erhalten Sie eine E-Mail. Die Zeit ist wieder frei.
+
+## Einen Termin absagen
+
+Unter **Kommende Termine** auf **Absagen**, dann **Ja, absagen und … informieren**. Die Zeit ist wieder frei, der Besucher erhält eine E-Mail.
 
 ## Mit Ihrem Kalender verbinden
 
-Verbinden Sie Outlook (Microsoft 365). Dann gilt:
+Verbinden Sie Outlook. Dann wird nicht mehr angeboten, was in Ihrem Kalender schon belegt ist, und jede Buchung erscheint dort als Termin. [Outlook](/integrationen/outlook)
 
-- Wo Sie schon etwas eingetragen haben, kann niemand buchen.
-- Neue Buchungen erscheinen als Termin in Ihrem Kalender.
+Google Kalender richten wir auf Anfrage ein. [Google Kalender](/integrationen/google-kalender)
 
-Google Kalender richten wir auf Wunsch ein. [Schreiben Sie uns](https://lucelabs.ch/contact/).
+## Wie viel ist los?
 
-## Calendly oder ein eigenes Buchungssystem
+Fragen Besucher, wann wenig los ist, zeigt der Chat ein Diagramm pro Tag und nennt eine ruhigere Zeit.
 
-Nutzen Sie Calendly, zeigt Ihr Assistent Ihre freien Zeiten. Gebucht wird dann auf Calendly. Siehe [Verbindungen](/funktionen/verbindungen).
+Unter **Wie viel ist los?** schalten Sie **Stosszeiten im Chat zeigen** ein und tragen pro Tag ein, wann Sie offen haben und wann viel los ist. Lassen Sie «Viel los» für einen Tag leer, zeigt das Diagramm, wie voll Ihre Termine sind. Der Chat sagt dazu, dass es Ihre Angaben sind, nicht Live-Daten.
 
-Ohne Verbindung bestätigt Ihr Assistent nie selbst einen Termin. Er verlinkt dann auf Ihre Buchungsseite.
+## Calendly oder ein anderes Buchungssystem
+
+Mit Calendly zeigt Ihr Assistent Ihre freien Zeiten, gebucht wird auf Calendly. [Calendly](/integrationen/calendly)
+
+Ohne Termine im Chat bestätigt Ihr Assistent nie selbst einen Termin. Er verlinkt dann auf Ihre Buchungsseite oder bietet die [Anfrage ans Team](/chat/kontaktformular) an.
+
+<Note>
+  Name und Kontaktangaben aus einer Buchung werden 30 Tage nach dem Termin gelöscht.
+</Note>

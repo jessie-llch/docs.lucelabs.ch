@@ -1,0 +1,46 @@
+---
+title: "Open-Meteo"
+description: "Der Wetterbericht für Ihren Ort, direkt im Chat."
+---
+
+## Was es kann
+
+Ihr Assistent beantwortet Fragen zum Wetter bei Ihnen in den nächsten Tagen, bis zu einer Woche voraus. Etwa für Ausflüge, die Terrasse oder Skitage: «Wie wird das Wetter am Samstag?»
+
+## Was Sie brauchen
+
+- Einen eigenen API-Schlüssel von Open-Meteo. Open-Meteo ist nur für nicht kommerzielle Nutzung gratis. Für Ihr Geschäft wählen Sie einen Plan auf open-meteo.com.
+- Die Koordinaten Ihres Orts.
+- Den Plan Medium oder höher und eine freie [Verbindung](/funktionen/verbindungen).
+
+## Einrichten
+
+<Steps>
+  <Step title="Schlüssel holen">
+    Auf open-meteo.com einen Plan für kommerzielle Nutzung wählen und den API-Schlüssel kopieren.
+  </Step>
+  <Step title="Koordinaten finden">
+    In Google Maps mit der rechten Maustaste auf Ihren Ort klicken. Die erste Zeile zeigt Breite und Länge, zum Beispiel `46.4908, 9.8355`.
+  </Step>
+  <Step title="In Lucelabs eintragen">
+    Unter **Funktionen › Verbindungen** «Wetterbericht (Open-Meteo)» wählen, Schlüssel, Breite und Länge eintragen.
+  </Step>
+  <Step title="Testen und einschalten">
+    **Testen** drücken, dann **Einschalten**.
+  </Step>
+</Steps>
+
+## Was Besucher sehen
+
+Eine kurze Antwort zum Wetter an Ihrem Ort für den gefragten Tag.
+
+## Wenn es nicht klappt
+
+<AccordionGroup>
+  <Accordion title="Das System hat die Anmeldung abgelehnt">
+    Der Schlüssel stimmt nicht oder Ihr Open-Meteo-Plan ist abgelaufen. Prüfen Sie ihn bei Open-Meteo.
+  </Accordion>
+  <Accordion title="Das Wetter stimmt nicht für meinen Ort">
+    Breite und Länge vertauscht? Die Breite ist in der Schweiz etwa 45 bis 48, die Länge etwa 5 bis 11.
+  </Accordion>
+</AccordionGroup>

@@ -46,6 +46,10 @@
             {
                 "label": "Status",
                 "href": "https://lucelabs.ch/status/"
+            },
+            {
+                "label": "Entwickler-Login",
+                "href": "https://lucelabs.ch/admin/docs/"
             }
         ],
         "primary": {
@@ -55,49 +59,148 @@
         }
     },
     "navigation": {
-        "groups": [
+        "tabs": [
             {
-                "group": "Los geht's",
-                "pages": [
-                    "index",
-                    "start/assistent-erstellen",
-                    "start/einbauen",
-                    "start/testen"
+                "tab": "Anleitung",
+                "groups": [
+                    {
+                        "group": "Los geht's",
+                        "pages": [
+                            "index",
+                            "start/assistent-erstellen",
+                            "start/dashboard",
+                            "start/einbauen",
+                            "start/ist-er-live",
+                            "start/testen"
+                        ]
+                    },
+                    {
+                        "group": "Ihr Assistent",
+                        "pages": [
+                            "assistent/wissen",
+                            "assistent/website-lesen",
+                            "assistent/fragen-und-antworten",
+                            "assistent/antworten",
+                            "assistent/offene-fragen",
+                            "assistent/sprachen",
+                            "assistent/verwalten"
+                        ]
+                    },
+                    {
+                        "group": "Der Chat",
+                        "pages": [
+                            "assistent/aussehen",
+                            "chat/begruessung",
+                            "chat/fuer-besucher",
+                            "chat/kontaktformular"
+                        ]
+                    },
+                    {
+                        "group": "Funktionen",
+                        "pages": [
+                            "funktionen/termine",
+                            "funktionen/reservationen",
+                            "funktionen/shop",
+                            "funktionen/newsletter",
+                            "funktionen/verbindungen"
+                        ]
+                    },
+                    {
+                        "group": "Im Alltag",
+                        "pages": [
+                            "alltag/gespraeche",
+                            "alltag/live-chat",
+                            "alltag/anfragen",
+                            "alltag/statistik",
+                            "alltag/benachrichtigungen"
+                        ]
+                    },
+                    {
+                        "group": "Hilfe",
+                        "pages": [
+                            "haeufige-fragen",
+                            "hilfe/support",
+                            "hilfe/ausprobieren"
+                        ]
+                    }
                 ]
             },
             {
-                "group": "Ihr Assistent",
-                "pages": [
-                    "assistent/wissen",
-                    "assistent/fragen-und-antworten",
-                    "assistent/antworten",
-                    "assistent/aussehen",
-                    "assistent/sprachen",
-                    "assistent/offene-fragen"
+                "tab": "Integrationen",
+                "groups": [
+                    {
+                        "group": "Integrationen",
+                        "pages": [
+                            "integrationen/index",
+                            {
+                                "group": "Website",
+                                "pages": [
+                                    "integrationen/wordpress",
+                                    "integrationen/wix",
+                                    "integrationen/squarespace",
+                                    "integrationen/webflow",
+                                    "integrationen/jimdo",
+                                    "integrationen/typo3",
+                                    "integrationen/joomla",
+                                    "integrationen/framer",
+                                    "integrationen/andere-websites"
+                                ]
+                            },
+                            {
+                                "group": "Kalender & Termine",
+                                "pages": [
+                                    "integrationen/outlook",
+                                    "integrationen/google-kalender",
+                                    "integrationen/calendly"
+                                ]
+                            },
+                            {
+                                "group": "Shop",
+                                "pages": [
+                                    "integrationen/woocommerce",
+                                    "integrationen/shopify"
+                                ]
+                            },
+                            {
+                                "group": "Newsletter",
+                                "pages": [
+                                    "integrationen/brevo",
+                                    "integrationen/mailchimp"
+                                ]
+                            },
+                            {
+                                "group": "Daten",
+                                "pages": [
+                                    "integrationen/oev",
+                                    "integrationen/open-meteo"
+                                ]
+                            }
+                        ]
+                    }
                 ]
             },
             {
-                "group": "Funktionen",
-                "pages": [
-                    "funktionen/termine",
-                    "funktionen/shop",
-                    "funktionen/newsletter",
-                    "funktionen/verbindungen"
-                ]
-            },
-            {
-                "group": "Konto und Preise",
-                "pages": [
-                    "konto/plaene",
-                    "konto/testphase",
-                    "konto/zusatzgespraeche",
-                    "konto/datenschutz"
-                ]
-            },
-            {
-                "group": "Hilfe",
-                "pages": [
-                    "haeufige-fragen"
+                "tab": "Konto und Preise",
+                "groups": [
+                    {
+                        "group": "Team und Konto",
+                        "pages": [
+                            "konto/team",
+                            "konto/einstellungen",
+                            "konto/anmeldung",
+                            "konto/datenschutz"
+                        ]
+                    },
+                    {
+                        "group": "Abo und Preise",
+                        "pages": [
+                            "konto/plaene",
+                            "konto/testphase",
+                            "konto/abo-verwalten",
+                            "konto/zusatzgespraeche",
+                            "konto/zusatzoptionen"
+                        ]
+                    }
                 ]
             }
         ]

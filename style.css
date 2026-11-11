@@ -1,0 +1,60 @@
+/* Lucelabs Hilfe: colours of the six themes of lucelabs.ch (themes.css there) and the theme picker.
+   Mintlify reads its colours from these variables as "r g b". Midnight is the default and matches docs.json. */
+
+html[data-palette="midnight"] { --primary: 54 92 133; --primary-light: 169 196 226; --primary-dark: 23 36 58; --background-light: 247 248 250; --background-dark: 16 23 34; }
+html[data-palette="burgundy"] { --primary: 120 63 80; --primary-light: 214 169 183; --primary-dark: 48 33 38; --background-light: 250 248 247; --background-dark: 27 20 24; }
+html[data-palette="purple"]   { --primary: 112 91 153; --primary-light: 196 178 229; --primary-dark: 48 38 74; --background-light: 248 247 251; --background-dark: 23 19 33; }
+html[data-palette="petrol"]   { --primary: 14 110 122; --primary-light: 111 208 220; --primary-dark: 16 25 28; --background-light: 247 246 242; --background-dark: 12 20 22; }
+html[data-palette="stone"]    { --primary: 200 52 26; --primary-light: 255 154 127; --primary-dark: 28 25 23; --background-light: 248 245 240; --background-dark: 20 18 16; }
+html[data-palette="noir"]     { --primary: 26 26 26; --primary-light: 255 154 92; --primary-dark: 17 17 17; --background-light: 250 250 248; --background-dark: 14 14 14; }
+
+/* the picker button, placed next to the light/dark switch */
+.ll-pal { position: relative; display: inline-flex; flex: none; }
+.ll-pal-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 28px; height: 28px; border-radius: 999px; padding: 0; cursor: pointer;
+  border: 1px solid rgb(var(--gray-200) / .7); background: transparent;
+}
+html.dark .ll-pal-btn { border-color: rgb(255 255 255 / .07); }
+.ll-pal-btn:hover { border-color: rgb(var(--gray-400) / .8); }
+html.dark .ll-pal-btn:hover { border-color: rgb(255 255 255 / .18); }
+.ll-pal-btn:focus-visible, .ll-pal-opt:focus-visible { outline: 2px solid rgb(var(--primary)); outline-offset: 2px; }
+html.dark .ll-pal-btn:focus-visible, html.dark .ll-pal-opt:focus-visible { outline-color: rgb(var(--primary-light)); }
+.ll-dot {
+  display: block; width: 14px; height: 14px; border-radius: 50%;
+  background: conic-gradient(var(--a) 0 50%, var(--b) 50% 75%, var(--c) 75% 100%);
+  box-shadow: 0 0 0 1px rgb(0 0 0 / .12);
+}
+.ll-pal-btn .ll-dot { transition: transform .45s cubic-bezier(.3, 1.5, .5, 1); }
+.ll-pal-btn[aria-expanded="true"] .ll-dot { transform: rotate(120deg); }
+
+/* the list */
+.ll-pal-menu {
+  position: absolute; z-index: 60; top: calc(100% + 8px); right: 0; width: 248px; padding: 6px; margin: 0;
+  border-radius: 14px; list-style: none;
+  background: rgb(var(--background-light)); color: rgb(var(--gray-900));
+  border: 1px solid rgb(var(--gray-200));
+  box-shadow: 0 18px 40px -18px rgb(0 0 0 / .35);
+}
+html.dark .ll-pal-menu { background: rgb(var(--background-dark)); color: rgb(var(--gray-50)); border-color: rgb(255 255 255 / .1); }
+.ll-pal-menu[hidden] { display: none; }
+.ll-pal-title { margin: 6px 8px 6px; font-size: 12px; color: rgb(var(--gray-500)); }
+.ll-pal-opt {
+  display: flex; align-items: center; gap: 10px; width: 100%; padding: 8px; border: 0; border-radius: 10px;
+  background: transparent; color: inherit; text-align: left; cursor: pointer; font: inherit;
+}
+.ll-pal-opt:hover { background: rgb(var(--gray-100)); }
+html.dark .ll-pal-opt:hover { background: rgb(255 255 255 / .06); }
+.ll-pal-opt .ll-dot { width: 20px; height: 20px; flex: none; }
+.ll-pal-opt b { display: block; font-size: 14px; font-weight: 600; line-height: 1.3; }
+.ll-pal-opt small { display: block; font-size: 12px; line-height: 1.35; color: rgb(var(--gray-500)); }
+html.dark .ll-pal-opt small { color: rgb(var(--gray-400)); }
+.ll-pal-opt .ll-check { margin-left: auto; width: 16px; height: 16px; flex: none; opacity: 0; color: rgb(var(--primary)); }
+html.dark .ll-pal-opt .ll-check { color: rgb(var(--primary-light)); }
+.ll-pal-opt[aria-checked="true"] .ll-check { opacity: 1; }
+
+@media (max-width: 1023px) {
+  .ll-pal-btn { width: 38px; height: 38px; }
+  .ll-pal-menu { right: auto; left: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .ll-pal-btn .ll-dot { transition: none; } }

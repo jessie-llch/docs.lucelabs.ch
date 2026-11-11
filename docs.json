@@ -62,41 +62,54 @@
         "tabs": [
             {
                 "tab": "Anleitung",
+                "icon": "book",
                 "groups": [
                     {
                         "group": "Los geht's",
+                        "icon": "rocket",
                         "pages": [
                             "index",
                             "start/assistent-erstellen",
-                            "start/dashboard",
                             "start/einbauen",
                             "start/ist-er-live",
-                            "start/testen"
+                            "start/testen",
+                            "start/dashboard"
                         ]
                     },
                     {
                         "group": "Ihr Assistent",
+                        "icon": "sparkles",
                         "pages": [
-                            "assistent/wissen",
-                            "assistent/website-lesen",
-                            "assistent/fragen-und-antworten",
-                            "assistent/antworten",
-                            "assistent/offene-fragen",
-                            "assistent/sprachen",
+                            {
+                                "group": "Wissen und Antworten",
+                                "icon": "book-open",
+                                "expanded": false,
+                                "pages": [
+                                    "assistent/wissen",
+                                    "assistent/website-lesen",
+                                    "assistent/fragen-und-antworten",
+                                    "assistent/antworten",
+                                    "assistent/offene-fragen",
+                                    "assistent/sprachen"
+                                ]
+                            },
+                            {
+                                "group": "Chat-Fenster",
+                                "icon": "comment-dots",
+                                "expanded": false,
+                                "pages": [
+                                    "assistent/aussehen",
+                                    "chat/begruessung",
+                                    "chat/fuer-besucher",
+                                    "chat/kontaktformular"
+                                ]
+                            },
                             "assistent/verwalten"
                         ]
                     },
                     {
-                        "group": "Der Chat",
-                        "pages": [
-                            "assistent/aussehen",
-                            "chat/begruessung",
-                            "chat/fuer-besucher",
-                            "chat/kontaktformular"
-                        ]
-                    },
-                    {
                         "group": "Funktionen",
+                        "icon": "puzzle-piece",
                         "pages": [
                             "funktionen/termine",
                             "funktionen/reservationen",
@@ -107,6 +120,8 @@
                     },
                     {
                         "group": "Im Alltag",
+                        "icon": "mug-hot",
+                        "expanded": false,
                         "pages": [
                             "alltag/gespraeche",
                             "alltag/live-chat",
@@ -117,6 +132,7 @@
                     },
                     {
                         "group": "Hilfe",
+                        "icon": "life-ring",
                         "pages": [
                             "haeufige-fragen",
                             "hilfe/support",
@@ -127,63 +143,74 @@
             },
             {
                 "tab": "Integrationen",
+                "icon": "plug",
                 "groups": [
                     {
-                        "group": "Integrationen",
+                        "group": "Übersicht",
+                        "icon": "border-all",
                         "pages": [
-                            "integrationen/index",
-                            {
-                                "group": "Website",
-                                "pages": [
-                                    "integrationen/wordpress",
-                                    "integrationen/wix",
-                                    "integrationen/squarespace",
-                                    "integrationen/webflow",
-                                    "integrationen/jimdo",
-                                    "integrationen/typo3",
-                                    "integrationen/joomla",
-                                    "integrationen/framer",
-                                    "integrationen/andere-websites"
-                                ]
-                            },
-                            {
-                                "group": "Kalender & Termine",
-                                "pages": [
-                                    "integrationen/outlook",
-                                    "integrationen/google-kalender",
-                                    "integrationen/calendly"
-                                ]
-                            },
-                            {
-                                "group": "Shop",
-                                "pages": [
-                                    "integrationen/woocommerce",
-                                    "integrationen/shopify"
-                                ]
-                            },
-                            {
-                                "group": "Newsletter",
-                                "pages": [
-                                    "integrationen/brevo",
-                                    "integrationen/mailchimp"
-                                ]
-                            },
-                            {
-                                "group": "Daten",
-                                "pages": [
-                                    "integrationen/oev",
-                                    "integrationen/open-meteo"
-                                ]
-                            }
+                            "integrationen/index"
+                        ]
+                    },
+                    {
+                        "group": "Website",
+                        "icon": "globe",
+                        "expanded": false,
+                        "pages": [
+                            "integrationen/wordpress",
+                            "integrationen/wix",
+                            "integrationen/squarespace",
+                            "integrationen/webflow",
+                            "integrationen/jimdo",
+                            "integrationen/typo3",
+                            "integrationen/joomla",
+                            "integrationen/framer",
+                            "integrationen/andere-websites"
+                        ]
+                    },
+                    {
+                        "group": "Kalender & Termine",
+                        "icon": "calendar",
+                        "pages": [
+                            "integrationen/lucelabs-kalender",
+                            "integrationen/outlook",
+                            "integrationen/google-kalender",
+                            "integrationen/calendly"
+                        ]
+                    },
+                    {
+                        "group": "Shop",
+                        "icon": "cart-shopping",
+                        "pages": [
+                            "integrationen/woocommerce",
+                            "integrationen/shopify"
+                        ]
+                    },
+                    {
+                        "group": "Newsletter",
+                        "icon": "envelope",
+                        "pages": [
+                            "integrationen/brevo",
+                            "integrationen/mailchimp"
+                        ]
+                    },
+                    {
+                        "group": "Daten",
+                        "icon": "database",
+                        "pages": [
+                            "integrationen/oev",
+                            "integrationen/open-meteo"
                         ]
                     }
                 ]
             },
             {
                 "tab": "Konto und Preise",
+                "icon": "user",
                 "groups": [
                     {
                         "group": "Team und Konto",
+                        "icon": "users",
                         "pages": [
                             "konto/team",
                             "konto/einstellungen",
@@ -193,6 +220,7 @@
                     },
                     {
                         "group": "Abo und Preise",
+                        "icon": "credit-card",
                         "pages": [
                             "konto/plaene",
                             "konto/testphase",

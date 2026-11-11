@@ -1,26 +1,26 @@
 ---
 title: "Google Kalender"
 description: "Öffentliche Anlässe im Chat. Termine abgleichen auf Anfrage."
+icon: "calendar-days"
 ---
 
-Google Kalender lässt sich auf zwei Arten nutzen.
+Ihr Assistent nennt Ihre nächsten Anlässe aus einem öffentlichen Google Kalender, etwa Konzerte, Kurse, Themenabende oder besondere Öffnungszeiten.
 
-| | Wofür | Verfügbar |
-| --- | --- | --- |
-| **Öffentliche Anlässe** | Ihr Assistent nennt Ihre nächsten Anlässe aus einem öffentlichen Kalender. | ab Medium, als Verbindung |
-| **Termine abgleichen** | Wie bei [Outlook](/integrationen/outlook): belegte Zeiten ausblenden, Buchungen eintragen. | auf Anfrage |
+## Was es kann
 
-## Öffentliche Anlässe
+| | |
+| --- | --- |
+| **Öffentliche Anlässe** | «Welche Events kommen demnächst?», mit Datum und Zeit |
+| **Nur öffentliche Termine** | private Termine liest Ihr Assistent nicht |
+| **Termine abgleichen** | wie bei [Outlook](/integrationen/outlook), auf Anfrage |
 
-Ihr Assistent beantwortet Fragen zu Ihren nächsten Anlässen, etwa Konzerte, Kurse, Themenabende oder besondere Öffnungszeiten. Gelesen werden nur öffentliche Termine.
+## Was Sie brauchen
 
-### Was Sie brauchen
-
-- Einen Google Kalender, den Sie öffentlich machen dürfen. Am besten einen eigenen Kalender nur für Anlässe.
+- Einen Google Kalender, den Sie öffentlich machen dürfen. Am besten einen eigenen nur für Anlässe.
 - Ein Google-Konto mit Zugang zur Google Cloud Console, für einen API-Schlüssel.
 - Den Plan Medium oder höher und eine freie [Verbindung](/funktionen/verbindungen).
 
-### Einrichten
+## Einrichten
 
 <Steps>
   <Step title="Kalender öffentlich machen">
@@ -40,19 +40,19 @@ Ihr Assistent beantwortet Fragen zu Ihren nächsten Anlässen, etwa Konzerte, Ku
   </Step>
 </Steps>
 
-### Was Besucher sehen
-
-Fragt jemand «Welche Events kommen demnächst?», nennt Ihr Assistent die nächsten Anlässe aus Ihrem Kalender, mit Datum und Zeit.
-
 <Warning>
   Alles in diesem Kalender ist öffentlich. Tragen Sie dort keine privaten Termine ein.
 </Warning>
 
-## Termine abgleichen
+## Gut zu wissen
 
-Ihre Termine im Chat mit Google Kalender abgleichen richten wir auf Anfrage ein. [Schreiben Sie uns](https://lucelabs.ch/contact/). Mit Outlook geht es schon heute direkt im Dashboard.
+<AccordionGroup>
+  <Accordion title="Termine mit Google Kalender abgleichen">
+    Ihre Termine im Chat mit Google Kalender abgleichen richten wir auf Anfrage ein. [Schreiben Sie uns](https://lucelabs.ch/contact/). Mit [Outlook](/integrationen/outlook) geht es schon heute direkt im Dashboard.
+  </Accordion>
+</AccordionGroup>
 
-## Wenn es nicht klappt
+## Wenn etwas nicht klappt
 
 <AccordionGroup>
   <Accordion title="Das System hat die Anmeldung abgelehnt">
@@ -62,6 +62,6 @@ Ihre Termine im Chat mit Google Kalender abgleichen richten wir auf Anfrage ein.
     Die Kalender-ID stimmt nicht, oder der Kalender ist nicht öffentlich.
   </Accordion>
   <Accordion title="Ein Anlass fehlt">
-    Steht der Termin im richtigen Kalender, und ist er öffentlich sichtbar? Private Termine liest Ihr Assistent nicht.
+    Steht der Termin im richtigen Kalender, und ist er öffentlich sichtbar?
   </Accordion>
 </AccordionGroup>

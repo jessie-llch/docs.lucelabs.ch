@@ -1,23 +1,40 @@
 ---
 title: "Verbindungen"
 description: "Daten aus anderen Systemen, live im Chat."
+icon: "plug"
 ---
 
 Mit Verbindungen schlägt Ihr Assistent Daten nach, die nicht auf Ihrer Website stehen. Live, im Moment der Frage.
 
-| Verbindung | Was Besucher fragen | Was Sie brauchen |
-| --- | --- | --- |
-| [Bestellstatus (WooCommerce)](/integrationen/woocommerce#bestellstatus) | «Wo ist meine Bestellung 1042?» | WooCommerce-Schlüssel mit Leserecht |
-| [Öffentlicher Verkehr (SBB, PostAuto …)](/integrationen/oev) | «Wie komme ich von Bern zu Ihnen?» | nichts |
-| [Wetterbericht (Open-Meteo)](/integrationen/open-meteo) | «Wie wird das Wetter am Samstag?» | eigener Open-Meteo-Schlüssel |
-| [Calendly – freie Termine](/integrationen/calendly) | «Wann haben Sie nächste Woche Zeit?» | Calendly-Konto |
-| [Google Kalender – öffentliche Anlässe](/integrationen/google-kalender) | «Welche Events kommen demnächst?» | Google-API-Schlüssel und Kalender-ID |
+<CardGroup cols={2}>
+  <Card title="SBB, PostAuto & Co." icon="train" href="/integrationen/oev">
+    «Wie komme ich von Bern zu Ihnen?»
+  </Card>
+  <Card title="Wetterbericht" icon="cloud-sun" href="/integrationen/open-meteo">
+    «Wie wird das Wetter am Samstag?»
+  </Card>
+  <Card title="Calendly" icon="clock" href="/integrationen/calendly">
+    «Wann haben Sie nächste Woche Zeit?»
+  </Card>
+  <Card title="Google Kalender" icon="calendar-days" href="/integrationen/google-kalender">
+    «Welche Events kommen demnächst?»
+  </Card>
+  <Card title="WooCommerce-Bestellstatus" icon="box" href="/integrationen/woocommerce#bestellstatus">
+    «Wo ist meine Bestellung 1042?»
+  </Card>
+</CardGroup>
 
-## So richten Sie eine ein
+## Wie viele Verbindungen
+
+| Basic | Medium | Extended | Enterprise |
+| --- | --- | --- | --- |
+| keine | 1 | 3 | 5 |
+
+## Einrichten
 
 <Steps>
   <Step title="System wählen">
-    Auf der Seite Ihres Assistenten unter **Funktionen › Verbindungen** das System wählen und die Angaben aus der Anleitung eintragen, zum Beispiel einen API-Schlüssel.
+    Auf der Seite Ihres Assistenten unter **Funktionen › Verbindungen** das System wählen und die Angaben aus der Anleitung eintragen.
   </Step>
   <Step title="Testen">
     **Testen** drücken. Sie sehen, was Ihr Assistent von Ihrem System erhalten würde.
@@ -27,46 +44,41 @@ Mit Verbindungen schlägt Ihr Assistent Daten nach, die nicht auf Ihrer Website 
   </Step>
 </Steps>
 
-Mit **Hinweis für Ihren Assistenten** geben Sie eine kurze Regel mit, zum Beispiel «Nur den Stand einer Buchung nennen, nie den Preis.».
-
 Nur Inhaber und Admins Ihrer Firma können Verbindungen ändern.
 
-## Was Ihr Assistent kann und was nicht
+## Gut zu wissen
 
-- Er liest nur Daten. Er bucht, ändert oder storniert nichts, sondern bietet dafür Ihr Kontaktformular an.
-- Er nutzt nur die Abfragen, die Sie einschalten.
-- Bei Personendaten fragt er zuerst nach den nötigen Angaben, etwa Bestellnummer und E-Mail, und zeigt nie Daten einer anderen Person.
-- Findet Ihr System nichts oder antwortet es nicht, sagt er das ehrlich, statt zu raten.
+<AccordionGroup>
+  <Accordion title="Was Ihr Assistent kann und was nicht">
+    - Er liest nur Daten. Er bucht, ändert oder storniert nichts, sondern bietet dafür Ihr Kontaktformular an.
+    - Er nutzt nur die Abfragen, die Sie einschalten.
+    - Bei Personendaten fragt er zuerst nach den nötigen Angaben, etwa Bestellnummer und E-Mail, und zeigt nie Daten einer anderen Person.
+    - Findet Ihr System nichts oder antwortet es nicht, sagt er das ehrlich, statt zu raten.
+  </Accordion>
+  <Accordion title="Hinweis für Ihren Assistenten">
+    Mit **Hinweis für Ihren Assistenten** geben Sie eine kurze Regel mit, zum Beispiel «Nur den Stand einer Buchung nennen, nie den Preis.».
+  </Accordion>
+  <Accordion title="Alle Verbindungen auf einen Blick">
+    Im Dashboard unter **Verbindungen** sehen Sie alles, womit Ihre Assistenten verbunden sind: Website-Code, Kalender, Newsletter und jede Verbindung, mit Status und einem Link zum Ändern.
 
-Schlüssel und Passwörter werden verschlüsselt gespeichert und nie wieder angezeigt.
-
-## Ihre Verbindungen auf einen Blick
-
-Im Dashboard unter **Verbindungen** sehen Sie alles, womit Ihre Assistenten verbunden sind: Website-Code, Kalender, Newsletter und jede Verbindung, mit Status und einem Link zum Ändern.
-
-| Status | Bedeutung |
-| --- | --- |
-| **Eingeschaltet** | Ihr Assistent nutzt sie. |
-| **Ausgeschaltet** | Gespeichert, aber nicht im Einsatz. |
-| **Noch nicht getestet** | Zuerst **Testen**. |
-| **Letzter Test fehlgeschlagen** | Angaben prüfen, dann erneut testen. |
-| **Pausiert: nicht in Ihrem Plan** | Siehe unten. |
-
-## Wie viele Verbindungen
-
-| Plan | Verbindungen |
-| --- | --- |
-| Basic | keine |
-| Medium | 1 |
-| Extended | 3 |
-| Enterprise | 5 |
-
-Wechseln Sie in einen kleineren Plan, pausieren Verbindungen über dem Limit. Sie bleiben mit ihren Einstellungen gespeichert. Ihr Assistent sagt Besuchern dann, dass diese Funktion gerade nicht verfügbar ist.
-
-## Ein anderes System
-
-Ihr Buchungs- oder Kassensystem fehlt? Unter **Anderes System anfragen** nennen Sie das System und was Ihr Assistent nachschlagen soll. Wir prüfen, ob wir es anbinden können, und melden uns. Den Stand sehen Sie unter **Ihre Anfragen**: Eingegangen, Wird geprüft, Geplant, Verfügbar oder Nicht möglich.
-
-<Note>
-  Kann ein angebundenes System Buchungen annehmen, zeigt Ihr Assistent dem Besucher zuerst eine Zusammenfassung. Gebucht wird erst mit **Buchung bestätigen**. Jede Buchung sehen Sie unter **Buchungen aus dem Chat**.
-</Note>
+    | Status | Bedeutung |
+    | --- | --- |
+    | **Eingeschaltet** | Ihr Assistent nutzt sie. |
+    | **Ausgeschaltet** | Gespeichert, aber nicht im Einsatz. |
+    | **Noch nicht getestet** | Zuerst **Testen**. |
+    | **Letzter Test fehlgeschlagen** | Angaben prüfen, dann erneut testen. |
+    | **Pausiert: nicht in Ihrem Plan** | Plan über dem Limit, siehe unten. |
+  </Accordion>
+  <Accordion title="Kleinerer Plan">
+    Wechseln Sie in einen kleineren Plan, pausieren Verbindungen über dem Limit. Sie bleiben mit ihren Einstellungen gespeichert. Ihr Assistent sagt Besuchern dann, dass diese Funktion gerade nicht verfügbar ist.
+  </Accordion>
+  <Accordion title="Buchungen über ein angebundenes System">
+    Kann ein angebundenes System Buchungen annehmen, zeigt Ihr Assistent dem Besucher zuerst eine Zusammenfassung. Gebucht wird erst mit **Buchung bestätigen**. Jede Buchung sehen Sie unter **Buchungen aus dem Chat**.
+  </Accordion>
+  <Accordion title="Schlüssel und Passwörter">
+    Werden verschlüsselt gespeichert und nie wieder angezeigt.
+  </Accordion>
+  <Accordion title="Ihr System fehlt?">
+    Unter **Anderes System anfragen** nennen Sie das System und was Ihr Assistent nachschlagen soll. Wir prüfen, ob wir es anbinden können, und melden uns. Den Stand sehen Sie unter **Ihre Anfragen**: Eingegangen, Wird geprüft, Geplant, Verfügbar oder Nicht möglich.
+  </Accordion>
+</AccordionGroup>

@@ -1,11 +1,18 @@
 ---
 title: "Calendly"
 description: "Freie Termine aus Calendly im Chat. Gebucht wird auf Calendly."
+icon: "clock"
 ---
+
+Ihr Assistent zeigt freie Termine aus Ihrem Calendly und gibt dem Besucher den Link zum Buchen.
 
 ## Was es kann
 
-Ihr Assistent zeigt freie Termine aus Ihrem Calendly und gibt dem Besucher den Link, um die gewählte Zeit zu buchen. Gebucht wird auf Calendly, nicht im Chat.
+| | |
+| --- | --- |
+| **Freie Zeiten** | «Wann haben Sie nächste Woche Zeit?» |
+| **Link zu Calendly** | der Besucher bucht dort wie gewohnt |
+| **Buchung bleibt bei Calendly** | nicht im Chat |
 
 ## Was Sie brauchen
 
@@ -19,7 +26,7 @@ Ihr Assistent zeigt freie Termine aus Ihrem Calendly und gibt dem Besucher den L
     In Calendly **Integrations & apps › API & webhooks** ein Personal Access Token erstellen. Lesezugriff genügt.
   </Step>
   <Step title="Event-Typ kopieren">
-    Die Adresse Ihres Event-Typs kopieren. Sie sieht so aus: `https://api.calendly.com/event_types/…`. Finden Sie sie nicht, [schreiben Sie uns](https://lucelabs.ch/contact/).
+    Die Adresse Ihres Event-Typs, sie beginnt mit `https://api.calendly.com/event_types/`. Finden Sie sie nicht, [schreiben Sie uns](https://lucelabs.ch/contact/).
   </Step>
   <Step title="In Lucelabs eintragen">
     Unter **Funktionen › Verbindungen** «Calendly – freie Termine» wählen und beides eintragen.
@@ -29,15 +36,15 @@ Ihr Assistent zeigt freie Termine aus Ihrem Calendly und gibt dem Besucher den L
   </Step>
 </Steps>
 
-## Was Besucher sehen
+## Gut zu wissen
 
-Fragt jemand «Wann haben Sie nächste Woche Zeit?», nennt Ihr Assistent freie Zeiten und den Link zu Calendly. Dort bucht der Besucher wie gewohnt.
+<AccordionGroup>
+  <Accordion title="Calendly oder Lucelabs-Kalender?">
+    Zwei Wege: Mit Calendly bleibt die Buchung bei Calendly. Mit dem [Lucelabs-Kalender](/integrationen/lucelabs-kalender) buchen Besucher direkt im Chat.
+  </Accordion>
+</AccordionGroup>
 
-<Note>
-  Calendly und die [Termine im Chat](/funktionen/termine) sind zwei Wege. Mit Calendly bleibt die Buchung bei Calendly.
-</Note>
-
-## Wenn es nicht klappt
+## Wenn etwas nicht klappt
 
 <AccordionGroup>
   <Accordion title="Das System hat die Anmeldung abgelehnt">

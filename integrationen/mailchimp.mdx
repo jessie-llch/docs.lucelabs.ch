@@ -1,51 +1,68 @@
 ---
 title: "Mailchimp"
 description: "Newsletter-Anmeldungen aus dem Chat direkt in Ihre Mailchimp-Audience."
+icon: "envelope"
 ---
+
+Bestätigte Newsletter-Anmeldungen aus dem Chat gehen automatisch in Ihre Audience bei Mailchimp.
 
 ## Was es kann
 
-Meldet sich ein Besucher im Chat für Ihren Newsletter an und bestätigt seine Adresse, geht sie automatisch in Ihre Audience bei Mailchimp. Meldet er sich ab oder entfernen Sie die Adresse, wird sie auch dort entfernt.
+| | |
+| --- | --- |
+| **Neue Adressen** | gehen nach der Bestätigung in Ihre Audience |
+| **Abmelden und Entfernen** | wird auch bei Mailchimp entfernt |
+| **Frühere Anmeldungen** | schon bestätigte Adressen gehen beim Speichern ebenfalls an Mailchimp |
+| **Status pro Adresse** | **gesendet** oder **noch nicht gesendet** |
 
 ## Was Sie brauchen
 
 - Ein Mailchimp-Konto mit einer Audience.
-- Die [Newsletter-Anmeldung](/funktionen/newsletter) im Chat, eingeschaltet. In allen Plänen. Zählt nicht als Verbindung.
+- Die [Newsletter-Anmeldung](/funktionen/newsletter) im Chat, eingeschaltet. Alle Pläne, zählt nicht als Verbindung.
 
 ## Einrichten
 
 <Steps>
   <Step title="API-Schlüssel erstellen">
-    In Ihrem Mailchimp-Konto einen API-Schlüssel erstellen und ganz kopieren. Das Rechenzentrum am Ende gehört dazu, zum Beispiel `-us21`.
+    In Mailchimp einen API-Schlüssel erstellen und ganz kopieren, mit dem Rechenzentrum am Ende, zum Beispiel `-us21`.
   </Step>
   <Step title="Audience-ID kopieren">
-    Die ID der Audience, in die neue Adressen sollen. Sie steht in Mailchimp in den Einstellungen der Audience.
+    Sie steht in Mailchimp in den Einstellungen der Audience.
   </Step>
   <Step title="In Lucelabs eintragen">
-    Unter **Funktionen › Newsletter-Anmeldung › An Brevo oder Mailchimp senden** bei **Dienst** Mailchimp wählen, API-Schlüssel und Audience-ID eintragen und **Speichern**.
+    Unter **Funktionen › Newsletter-Anmeldung › An Brevo oder Mailchimp senden** bei **Dienst** Mailchimp wählen, Schlüssel und Audience-ID eintragen, **Speichern**.
   </Step>
   <Step title="Prüfen">
     Beim Speichern prüfen wir Schlüssel und Audience. Mit **Verbindung testen** prüfen Sie es jederzeit erneut.
   </Step>
 </Steps>
 
-Adressen, die schon vorher bestätigt wurden, gehen beim Speichern ebenfalls an Mailchimp.
+## Gut zu wissen
 
-## Was Besucher sehen
+<AccordionGroup>
+  <Accordion title="Was Besucher sehen">
+    Nur das Formular im Chat und die Bestätigungs-E-Mail. Von Mailchimp sehen sie nichts, bis Sie Ihren Newsletter senden.
+  </Accordion>
+  <Accordion title="Ihr Schlüssel">
+    Wird verschlüsselt gespeichert und nie angezeigt. Mit **Gespeicherten Schlüssel löschen** entfernen Sie ihn.
+  </Accordion>
+  <Accordion title="Datenschutz">
+    Mailchimp kann Daten ausserhalb der Schweiz speichern.
+  </Accordion>
+</AccordionGroup>
 
-Nur das Formular im Chat und die Bestätigungs-E-Mail. Von Mailchimp sehen sie nichts, bis Sie Ihren Newsletter senden.
+## Wenn etwas nicht klappt
 
-## Status
+<AccordionGroup>
+  <Accordion title="«Der Schlüssel wurde abgelehnt.»">
+    Schlüssel neu aus Mailchimp kopieren, mit Rechenzentrum.
+  </Accordion>
+  <Accordion title="«Die Liste wurde nicht gefunden.»">
+    Audience-ID prüfen.
+  </Accordion>
+  <Accordion title="«Der Dienst hat nicht geantwortet.»">
+    Später nochmals versuchen. Die Adressen bleiben in Lucelabs gespeichert.
+  </Accordion>
+</AccordionGroup>
 
-| Meldung | Was Sie tun |
-| --- | --- |
-| **Verbunden. Bestätigte Adressen gehen in Ihre Liste.** | Nichts. |
-| **Der Schlüssel wurde abgelehnt.** | Schlüssel neu aus Mailchimp kopieren, mit Rechenzentrum. |
-| **Die Liste wurde nicht gefunden.** | Audience-ID prüfen. |
-| **Der Dienst hat nicht geantwortet.** | Später nochmals versuchen. Die Adressen bleiben in Lucelabs gespeichert. |
-
-Bei jeder Adresse in der Liste steht **gesendet** oder **noch nicht gesendet**.
-
-<Note>
-  Der Schlüssel wird verschlüsselt gespeichert und nie angezeigt. Mit **Gespeicherten Schlüssel löschen** entfernen Sie ihn. Mailchimp kann Daten ausserhalb der Schweiz speichern.
-</Note>
+Steht dort **Verbunden. Bestätigte Adressen gehen in Ihre Liste.**, ist alles in Ordnung.

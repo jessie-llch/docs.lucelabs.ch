@@ -1,36 +1,41 @@
 ---
 title: "Shop"
 description: "Produkte im Chat zeigen und in den Warenkorb legen."
+icon: "bag-shopping"
 ---
 
 Ihr Assistent erkennt Ihre Produkte beim Lesen der Website: Name, Preis, Varianten, Bild. Fragt ein Besucher danach, zeigt er sie als Karte im Chat. Sie richten dafür nichts ein.
 
-<Info>
-  Produktkarten im Chat gibt es ab dem Plan Medium, oder bei Basic mit der Zusatzoption «Tabellen, Statistiken und Karten». Ohne Karten nennt Ihr Assistent die Produkte im Text.
-</Info>
+<CardGroup cols={2}>
+  <Card title="WooCommerce" icon="wordpress" href="/integrationen/woocommerce">
+    Karten, Warenkorb und Bestellstatus.
+  </Card>
+  <Card title="Shopify" icon="shopify" href="/integrationen/shopify">
+    Karten und Warenkorb.
+  </Card>
+</CardGroup>
 
-## Die Produktkarte
+## Das Wichtigste
 
-Ein Tipp auf die Karte öffnet die Details: Bild, Text, Preis, Varianten, ob das Produkt an Lager oder ausverkauft ist. Dazu **In den Warenkorb** oder **Produkt öffnen**.
-
-## In den Warenkorb
-
-| Shop | Was Besucher tun |
+| | |
 | --- | --- |
-| WooCommerce | Variante wählen, **In den Warenkorb**. [WooCommerce](/integrationen/woocommerce) |
-| Shopify | Variante wählen, **In den Warenkorb**. [Shopify](/integrationen/shopify) |
-| Wix, Squarespace, Webflow, Jimdo | **Produkt öffnen**, dann kaufen wie gewohnt. |
+| **Plan** | Produktkarten ab Medium, oder Basic mit der Zusatzoption «Tabellen, Statistiken und Karten». Ohne Karten nennt Ihr Assistent die Produkte im Text. |
+| **WooCommerce, Shopify** | Variante wählen, **In den Warenkorb**. |
+| **Wix, Squarespace, Webflow, Jimdo** | **Produkt öffnen**, dann kaufen wie gewohnt. |
+| **Preise** | kommen aus Ihrer Website, nie von der KI |
 
-Ihr Assistent legt nie selbst etwas in den Warenkorb, bestellt oder bezahlt. Er zeigt immer auf den Knopf.
+Ihr Assistent legt nie selbst etwas in den Warenkorb, bestellt oder bezahlt.
 
-<Note>
-  Preise kommen aus Ihrer Website, nie von der KI. Ob etwas an Lager ist, sagt er nur, wenn es dort steht.
-</Note>
+## Gut zu wissen
 
-## Bestellstatus
-
-Kunden von WooCommerce-Shops fragen im Chat nach ihrer Bestellung. Sie geben Bestellnummer und E-Mail an, beides muss zur Bestellung passen. [WooCommerce](/integrationen/woocommerce#bestellstatus)
-
-## Wenn keine Produkte erkannt werden
-
-Ihr Assistent erkennt Produkte, wenn Ihr Shop strukturierte Produktdaten (schema.org) veröffentlicht. Die grossen Shop-Systeme tun das von selbst. Neue oder geänderte Produkte erscheinen, nachdem die [Website neu gelesen](/assistent/website-lesen) wurde.
+<AccordionGroup>
+  <Accordion title="Die Produktkarte">
+    Ein Tipp öffnet die Details: Bild, Text, Preis, Varianten, ob das Produkt an Lager oder ausverkauft ist. Dazu **In den Warenkorb** oder **Produkt öffnen**. Ob etwas an Lager ist, sagt er nur, wenn es auf Ihrer Website steht.
+  </Accordion>
+  <Accordion title="Bestellstatus">
+    Kunden von WooCommerce-Shops fragen im Chat nach ihrer Bestellung, mit Bestellnummer und E-Mail. [WooCommerce](/integrationen/woocommerce#bestellstatus)
+  </Accordion>
+  <Accordion title="Es werden keine Produkte erkannt">
+    Ihr Assistent erkennt Produkte, wenn Ihr Shop strukturierte Produktdaten (schema.org) veröffentlicht. Die grossen Shop-Systeme tun das von selbst. Neue oder geänderte Produkte erscheinen, nachdem die [Website neu gelesen](/assistent/website-lesen) wurde.
+  </Accordion>
+</AccordionGroup>

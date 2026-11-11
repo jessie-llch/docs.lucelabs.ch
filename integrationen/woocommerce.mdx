@@ -1,7 +1,10 @@
 ---
 title: "WooCommerce"
 description: "Chat im Shop, Produktkarten, Warenkorb und Bestellstatus."
+icon: "cart-shopping"
 ---
+
+Ihr Assistent zeigt Ihre Produkte im Chat und nennt Kunden den Stand ihrer Bestellung.
 
 ## Was es kann
 
@@ -10,50 +13,55 @@ description: "Chat im Shop, Produktkarten, Warenkorb und Bestellstatus."
 | **Chat** auf jeder Seite, mit dem WordPress-Plugin | alle |
 | **Produktkarten:** Name, Bild, Preis, Varianten | ab Medium, oder Basic mit «Tabellen, Statistiken und Karten» |
 | **In den Warenkorb**, direkt aus dem Chat | wie Produktkarten |
-| **Bestellstatus:** «Wo ist meine Bestellung 1042?» | ab Medium, zählt als Verbindung |
+| **Bestellstatus:** «Wo ist meine Bestellung 1042?» | ab Medium, zählt als [Verbindung](/funktionen/verbindungen) |
 
-## Einbauen
+## Was Sie brauchen
 
-Nutzen Sie das WordPress-Plugin. Es funktioniert auch für WooCommerce-Shops. [WordPress](/integrationen/wordpress)
+- Das [WordPress-Plugin](/integrationen/wordpress). Es funktioniert auch für WooCommerce-Shops.
+- Für den Bestellstatus: Zugang zu **WooCommerce › Einstellungen**, die Adresse Ihres Shops mit `https://` und eine freie Verbindung.
 
-Danach unter **Wissen › Ihre Website** auf **Website jetzt lesen**. Dort steht dann, wie viele Produkte erkannt wurden.
+## Einrichten
 
-## Produktkarten und Warenkorb
-
-Sie richten nichts ein. Fragt ein Besucher nach einem Produkt, zeigt Ihr Assistent es als Karte. Ein Tipp öffnet die Details mit Varianten, Lagerstand und **In den Warenkorb**. Preise kommen immer aus Ihrem Shop, nie von der KI. Ihr Assistent legt nie selbst etwas in den Warenkorb, bestellt oder bezahlt.
+<Steps>
+  <Step title="Plugin installieren">
+    Wie bei [WordPress](/integrationen/wordpress) beschrieben.
+  </Step>
+  <Step title="Shop lesen lassen">
+    Unter **Wissen › Ihre Website** auf **Website jetzt lesen**. Dort steht dann, wie viele Produkte erkannt wurden. Für Produktkarten richten Sie sonst nichts ein.
+  </Step>
+</Steps>
 
 ## Bestellstatus
 
-Ihr Assistent nennt Kunden den Stand ihrer Bestellung. Dafür braucht es die Bestellnummer und die E-Mail-Adresse der Bestellung. Passen sie nicht zusammen, zeigt er nichts.
-
-### Was Sie brauchen
-
-- WooCommerce mit Zugang zu **WooCommerce › Einstellungen**.
-- Die Adresse Ihres Shops mit `https://`.
-- Den Plan Medium oder höher und eine freie Verbindung.
-
-### Einrichten
+Ihr Assistent braucht Bestellnummer und E-Mail-Adresse der Bestellung. Passen sie nicht zusammen, zeigt er nichts.
 
 <Steps>
   <Step title="Schlüssel erstellen">
     In WordPress **WooCommerce › Einstellungen › Erweitert › REST-API › Schlüssel hinzufügen**. Berechtigung **Lesen**.
   </Step>
   <Step title="Schlüssel kopieren">
-    Consumer Key (beginnt mit `ck_`) und Consumer Secret (beginnt mit `cs_`) kopieren. WooCommerce zeigt sie nur einmal.
+    Consumer Key (beginnt mit `ck_`) und Consumer Secret (beginnt mit `cs_`). WooCommerce zeigt sie nur einmal.
   </Step>
   <Step title="In Lucelabs eintragen">
-    Auf der Seite Ihres Assistenten unter **Funktionen › Verbindungen** **WooCommerce – Bestellstatus** wählen. Adresse Ihres Shops, zum Beispiel `https://shop.beispiel.ch`, und beide Schlüssel eintragen.
+    Unter **Funktionen › Verbindungen** **WooCommerce – Bestellstatus** wählen. Shop-Adresse, zum Beispiel `https://shop.beispiel.ch`, und beide Schlüssel eintragen.
   </Step>
   <Step title="Testen und einschalten">
     **Testen** drücken, dann **Einschalten**.
   </Step>
 </Steps>
 
-### Was Besucher sehen
+## Gut zu wissen
 
-Fragt jemand nach einer Bestellung, bittet Ihr Assistent um Bestellnummer und E-Mail-Adresse. Stimmen beide, nennt er den Stand. Sonst sagt er, dass er nichts dazu findet.
+<AccordionGroup>
+  <Accordion title="Produktkarten und Warenkorb">
+    Fragt ein Besucher nach einem Produkt, zeigt Ihr Assistent es als Karte. Ein Tipp öffnet die Details mit Varianten, Lagerstand und **In den Warenkorb**. Preise kommen immer aus Ihrem Shop, nie von der KI. Ihr Assistent legt nie selbst etwas in den Warenkorb, bestellt oder bezahlt.
+  </Accordion>
+  <Accordion title="Was Besucher beim Bestellstatus sehen">
+    Ihr Assistent bittet um Bestellnummer und E-Mail-Adresse. Stimmen beide, nennt er den Stand. Sonst sagt er, dass er nichts dazu findet.
+  </Accordion>
+</AccordionGroup>
 
-## Wenn es nicht klappt
+## Wenn etwas nicht klappt
 
 <AccordionGroup>
   <Accordion title="Das System hat die Anmeldung abgelehnt">

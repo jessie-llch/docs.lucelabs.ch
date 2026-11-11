@@ -1,25 +1,30 @@
 ---
 title: "Outlook"
 description: "Termine aus dem Chat mit Ihrem Outlook-Kalender abgleichen."
+icon: "calendar"
 ---
+
+Ihr Assistent bietet nur Zeiten an, die in Ihrem Outlook-Kalender frei sind, und trägt jede Buchung dort ein.
 
 ## Was es kann
 
-- **Belegte Zeiten** in Ihrem Outlook-Kalender werden im Chat nicht mehr angeboten.
-- **Jede Buchung** aus dem Chat erscheint in Ihrem Kalender als Termin, zum Beispiel «Termin: Anna Muster».
-- **Wird ein Termin abgesagt**, verschwindet er wieder aus dem Kalender.
-- **Tischreservierungen** erscheinen ebenfalls im Kalender. Einträge im Kalender sperren aber keine Tische.
+| | |
+| --- | --- |
+| **Belegte Zeiten** | werden im Chat nicht mehr angeboten |
+| **Jede Buchung** | erscheint im Kalender, zum Beispiel «Termin: Anna Muster» |
+| **Absagen** | der Termin verschwindet wieder aus dem Kalender |
+| **Tischreservierungen** | erscheinen ebenfalls, sperren aber keine Tische |
 
 ## Was Sie brauchen
 
 - Ein Microsoft-Konto mit Outlook-Kalender, zum Beispiel Microsoft 365.
-- [Termine im Chat](/funktionen/termine): ab dem Plan Medium, oder Basic mit der Zusatzoption «Tabellen, Statistiken und Karten». Der Kalender zählt nicht als Verbindung.
+- Den [Lucelabs-Kalender](/integrationen/lucelabs-kalender): ab Medium, oder Basic mit der Zusatzoption «Tabellen, Statistiken und Karten». Outlook zählt nicht als Verbindung.
 
-## Verbinden
+## Einrichten
 
 <Steps>
   <Step title="Termine einrichten">
-    Unter **Funktionen › Termine und Tische** zuerst Ihre Buchungszeiten festlegen. [Termine](/funktionen/termine)
+    Unter **Funktionen › Termine und Tische** zuerst Ihre Buchungszeiten festlegen. [Lucelabs-Kalender](/integrationen/lucelabs-kalender)
   </Step>
   <Step title="Outlook verbinden">
     Unter **Ihr Kalender** auf **Outlook verbinden** klicken.
@@ -28,23 +33,25 @@ description: "Termine aus dem Chat mit Ihrem Outlook-Kalender abgleichen."
     Mit Ihrem Microsoft-Konto anmelden und den Zugriff auf den Kalender erlauben.
   </Step>
   <Step title="Fertig">
-    Zurück im Dashboard steht: «Verbunden. Belegte Zeiten werden nicht mehr angeboten, und neue Buchungen erscheinen in Ihrem Kalender.»
+    Im Dashboard steht: «Verbunden. Belegte Zeiten werden nicht mehr angeboten, und neue Buchungen erscheinen in Ihrem Kalender.»
   </Step>
 </Steps>
 
-## Was Besucher sehen
+## Gut zu wissen
 
-Nur Zeiten, die zu Ihren Buchungszeiten passen und im Kalender frei sind. Der Besucher bucht wie gewohnt im Chat. Die Bestätigung kommt von Lucelabs, nicht als Einladung aus Outlook.
+<AccordionGroup>
+  <Accordion title="Was Besucher sehen">
+    Nur Zeiten, die zu Ihren Buchungszeiten passen und im Kalender frei sind. Der Besucher bucht wie gewohnt im Chat. Die Bestätigung kommt von Lucelabs, nicht als Einladung aus Outlook.
+  </Accordion>
+  <Accordion title="Trennen">
+    Unter **Ihr Kalender** auf **Trennen**. Bestehende Termine bleiben in Ihrem Kalender.
+  </Accordion>
+  <Accordion title="Datenschutz">
+    Terminzeiten und zu jeder Buchung Name, E-Mail und Telefon des Besuchers werden mit Microsoft ausgetauscht, auch ausserhalb der Schweiz, falls die Server dort stehen.
+  </Accordion>
+</AccordionGroup>
 
-<Warning>
-  Terminzeiten und zu jeder Buchung Name, E-Mail und Telefon des Besuchers werden mit Microsoft ausgetauscht, auch ausserhalb der Schweiz, falls die Server dort stehen.
-</Warning>
-
-## Trennen
-
-Unter **Ihr Kalender** auf **Trennen**. Bestehende Termine bleiben in Ihrem Kalender.
-
-## Wenn es nicht klappt
+## Wenn etwas nicht klappt
 
 <AccordionGroup>
   <Accordion title="Die Verbindung ist abgelaufen">

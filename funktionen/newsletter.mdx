@@ -1,37 +1,47 @@
 ---
 title: "Newsletter"
 description: "Anmeldungen im Chat, auf Wunsch direkt in Brevo oder Mailchimp."
+icon: "envelope-open-text"
 ---
 
-Besucher melden sich direkt im Chat für Ihren Newsletter an. Ihr Assistent erwähnt ihn nur, wenn jemand Interesse zeigt oder danach fragt. Es zählen nur Adressen, die über den Link in der E-Mail bestätigt wurden.
+Besucher melden sich direkt im Chat für Ihren Newsletter an. Ihr Assistent erwähnt ihn nur, wenn jemand Interesse zeigt oder danach fragt. Es zählen nur Adressen, die per E-Mail bestätigt wurden. In allen Plänen.
+
+<CardGroup cols={2}>
+  <Card title="Brevo" icon="paper-plane" href="/integrationen/brevo">
+    Bestätigte Adressen gehen in Ihre Brevo-Liste.
+  </Card>
+  <Card title="Mailchimp" icon="envelope" href="/integrationen/mailchimp">
+    Bestätigte Adressen gehen in Ihre Audience.
+  </Card>
+</CardGroup>
 
 ## Einrichten
 
-Unter **Funktionen › Newsletter-Anmeldung**:
-
 <Steps>
   <Step title="Einschalten">
-    **Newsletter-Anmeldung im Chat anbieten** einschalten.
+    Unter **Funktionen › Newsletter-Anmeldung** **Newsletter-Anmeldung im Chat anbieten** einschalten.
   </Step>
   <Step title="Kurzer Text (freiwillig)">
-    Höchstens 200 Zeichen, zum Beispiel «Einmal im Monat: neue Events und Angebote.». Er steht im Formular und hilft dem Assistenten, den Newsletter passend zu erwähnen.
+    Höchstens 200 Zeichen, zum Beispiel «Einmal im Monat: neue Events und Angebote.».
   </Step>
   <Step title="Link zu Ihrer Datenschutzerklärung">
-    Pflicht, mit `https://`. Der Link steht neben dem Kästchen für die Einwilligung. Ihre Datenschutzerklärung sollte die Newsletter-Anmeldung erwähnen.
+    Pflicht, mit `https://`. Sie sollte die Newsletter-Anmeldung erwähnen.
   </Step>
   <Step title="An Brevo oder Mailchimp senden (freiwillig)">
-    Bestätigte Adressen gehen automatisch in Ihre Liste. [Brevo](/integrationen/brevo) · [Mailchimp](/integrationen/mailchimp)
+    Siehe [Brevo](/integrationen/brevo) oder [Mailchimp](/integrationen/mailchimp).
   </Step>
 </Steps>
 
-## Was Besucher sehen
+## Gut zu wissen
 
-Ein kleines Formular: E-Mail-Adresse und ein Kästchen «Ich möchte den Newsletter von … per E-Mail erhalten. Ich kann mich jederzeit wieder abmelden.» Nach **Anmelden** kommt eine E-Mail mit **Anmeldung bestätigen**. Erst damit ist die Adresse angemeldet. Abmelden geht jederzeit über den Link in jeder E-Mail.
-
-## Ihre Adressen
-
-Unter **Bestätigte Adressen** sehen Sie jede Adresse mit Datum. Mit **Als CSV herunterladen** nehmen Sie die Liste mit, mit **Entfernen** löschen Sie eine Adresse.
-
-<Note>
-  Unbestätigte Anmeldungen werden nach 30 Tagen gelöscht.
-</Note>
+<AccordionGroup>
+  <Accordion title="Was Besucher sehen">
+    Ein kleines Formular: E-Mail-Adresse und ein Kästchen «Ich möchte den Newsletter von … per E-Mail erhalten. Ich kann mich jederzeit wieder abmelden.» Nach **Anmelden** kommt eine E-Mail mit **Anmeldung bestätigen**. Erst damit ist die Adresse angemeldet. Abmelden geht jederzeit über den Link in jeder E-Mail.
+  </Accordion>
+  <Accordion title="Ihre Adressen">
+    Unter **Bestätigte Adressen** sehen Sie jede Adresse mit Datum. Mit **Als CSV herunterladen** nehmen Sie die Liste mit, mit **Entfernen** löschen Sie eine Adresse.
+  </Accordion>
+  <Accordion title="Unbestätigte Anmeldungen">
+    Werden nach 30 Tagen gelöscht.
+  </Accordion>
+</AccordionGroup>

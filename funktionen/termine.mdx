@@ -1,56 +1,36 @@
 ---
 title: "Termine"
 description: "Besucher sehen Ihre freien Zeiten und buchen direkt im Chat."
+icon: "calendar-check"
 ---
 
-Fragt ein Besucher nach einem Termin, zeigt Ihr Assistent die freien Zeiten als Knöpfe unter der Antwort. Der Besucher wählt Tag und Zeit, gibt Name und E-Mail ein (Telefon freiwillig) und klickt auf **Diesen Termin buchen**.
+Fragt ein Besucher nach einem Termin, zeigt Ihr Assistent freie Zeiten als Knöpfe. Gebucht wird im Chat, mit Ihrem eigenen Lucelabs-Kalender. Wählen Sie, womit Sie arbeiten:
 
-<Info>
-  Termine im Chat gibt es ab dem Plan Medium, oder bei Basic mit der Zusatzoption «Tabellen, Statistiken und Karten».
-</Info>
+<CardGroup cols={2}>
+  <Card title="Lucelabs-Kalender" icon="calendar-check" href="/integrationen/lucelabs-kalender">
+    Buchungen direkt im Chat. Hier fangen Sie an.
+  </Card>
+  <Card title="Outlook" icon="calendar" href="/integrationen/outlook">
+    Belegte Zeiten ausblenden, Buchungen eintragen.
+  </Card>
+  <Card title="Google Kalender" icon="calendar-days" href="/integrationen/google-kalender">
+    Öffentliche Anlässe. Termine abgleichen auf Anfrage.
+  </Card>
+  <Card title="Calendly" icon="clock" href="/integrationen/calendly">
+    Freie Zeiten im Chat, gebucht wird auf Calendly.
+  </Card>
+</CardGroup>
 
-## Einrichten
+Für Restaurants gibt es stattdessen [Tischreservierungen](/funktionen/reservationen).
 
-Unter **Funktionen › Termine und Tische**. Bei **Was im Chat gebucht wird** wählen Sie **Termine**. Für Restaurants gibt es stattdessen [Tischreservierungen](/funktionen/reservationen).
+## Das Wichtigste
 
-| Einstellung | Beispiel |
+| | |
 | --- | --- |
-| **Termine im Chat anbieten** | ein |
-| **Wie heisst der Termin?** | Erstberatung |
-| **Wie lange dauert er?** | 30 Minuten |
-| **Buchbar mindestens** | 24 Std. im Voraus |
-| **Buchbar bis** | 30 Tage im Voraus |
-| **Wann Sie Zeit haben** | pro Wochentag, von … bis … |
-| **Besucher erinnern** | Keine Erinnerung, 1 Stunde bis einige Tage vorher |
-
-## Nach der Buchung
-
-- Der Besucher erhält eine Bestätigung per E-Mail, mit **Ansehen oder absagen**.
-- Sie erhalten eine E-Mail «Neuer Termin» und sehen ihn unter **Kommende Termine**.
-- Eine Zeit kann nie doppelt gebucht werden.
-- Sagt der Besucher ab, erhalten Sie eine E-Mail. Die Zeit ist wieder frei.
-
-## Einen Termin absagen
-
-Unter **Kommende Termine** auf **Absagen**, dann **Ja, absagen und … informieren**. Die Zeit ist wieder frei, der Besucher erhält eine E-Mail.
-
-## Mit Ihrem Kalender verbinden
-
-Verbinden Sie Outlook. Dann wird nicht mehr angeboten, was in Ihrem Kalender schon belegt ist, und jede Buchung erscheint dort als Termin. [Outlook](/integrationen/outlook)
-
-Google Kalender richten wir auf Anfrage ein. [Google Kalender](/integrationen/google-kalender)
-
-## Wie viel ist los?
-
-Fragen Besucher, wann wenig los ist, zeigt der Chat ein Diagramm pro Tag und nennt eine ruhigere Zeit.
-
-Unter **Wie viel ist los?** schalten Sie **Stosszeiten im Chat zeigen** ein und tragen pro Tag ein, wann Sie offen haben und wann viel los ist. Lassen Sie «Viel los» für einen Tag leer, zeigt das Diagramm, wie voll Ihre Termine sind. Der Chat sagt dazu, dass es Ihre Angaben sind, nicht Live-Daten.
-
-## Calendly oder ein anderes Buchungssystem
-
-Mit Calendly zeigt Ihr Assistent Ihre freien Zeiten, gebucht wird auf Calendly. [Calendly](/integrationen/calendly)
-
-Ohne Termine im Chat bestätigt Ihr Assistent nie selbst einen Termin. Er verlinkt dann auf Ihre Buchungsseite oder bietet die [Anfrage ans Team](/chat/kontaktformular) an.
+| **Plan** | ab Medium, oder Basic mit der Zusatzoption «Tabellen, Statistiken und Karten» |
+| **Wo einrichten** | **Funktionen › Termine und Tische** |
+| **Doppelt gebucht?** | Nie. Eine Zeit kann nur einmal gebucht werden. |
+| **Ohne Termine im Chat** | Ihr Assistent bestätigt nie selbst einen Termin. Er verlinkt auf Ihre Buchungsseite oder bietet die [Anfrage ans Team](/chat/kontaktformular) an. |
 
 <Note>
   Name und Kontaktangaben aus einer Buchung werden 30 Tage nach dem Termin gelöscht.

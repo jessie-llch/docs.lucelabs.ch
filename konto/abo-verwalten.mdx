@@ -1,23 +1,23 @@
 ---
 title: "Abo verwalten"
 description: "Plan wählen, wechseln, jährlich zahlen, Rechnungen und Kündigung."
+icon: "file-invoice"
 ---
 
 Alles zu Ihrem Abo finden Sie im Dashboard unter **Abo & Rechnungen**: Plan, Status, Preis, nächste Verlängerung und was enthalten ist.
 
 ## Einen Plan wählen
 
-Wählen Sie unter **Abo & Rechnungen** einen Plan und bezahlen Sie sicher über Stripe. Wählen Sie ihn während der Testphase, bleiben Ihre Gratistage gratis: Die erste Zahlung erfolgt am Ende der Testphase. Bis dahin wird Ihre Karte nur gespeichert.
+<Steps>
+  <Step title="Promo-Code (freiwillig)">
+    Hat Ihnen jemand Lucelabs empfohlen? Den Code unter **Promo-Code** eingeben, bevor Sie einen Plan wählen.
+  </Step>
+  <Step title="Plan wählen und bezahlen">
+    Unter **Abo & Rechnungen** einen Plan wählen und sicher über Stripe bezahlen.
+  </Step>
+</Steps>
 
-Der erste Monat ist die Mindestlaufzeit. Danach ist das Abo monatlich kündbar.
-
-## Promo-Code
-
-Hat Ihnen jemand Lucelabs empfohlen? Geben Sie den Code unter **Promo-Code** ein, bevor Sie einen Plan wählen. Der Rabatt gilt für die erste Rechnung und wird beim Bezahlen abgezogen. Promo-Codes gelten nur für neue Kundinnen und Kunden.
-
-<Tip>
-  Mit einem bezahlten Plan können Sie unter **Lucelabs empfehlen** einen eigenen Partner-Code anfragen. Neue Kunden erhalten damit einen Rabatt, Sie eine Gutschrift auf Ihre nächste Rechnung. Wir prüfen jede Anfrage persönlich.
-</Tip>
+Wählen Sie ihn während der Testphase, bleiben Ihre Gratistage gratis: Die erste Zahlung erfolgt am Ende der Testphase. Der erste Monat ist die Mindestlaufzeit, danach ist das Abo monatlich kündbar.
 
 ## Plan wechseln
 
@@ -25,37 +25,9 @@ Unter **Plan wechseln** sehen Sie, was sich ändert und was es kostet.
 
 | | Ab wann | Kosten |
 | --- | --- | --- |
-| **Upgrade** | ab heute | Heute zahlen Sie die Differenz für den Rest der Periode, danach den neuen Preis. |
-| **Downgrade** | ab der nächsten Verlängerung | Bis dahin behalten Sie alles aus Ihrem Plan, es wird nichts berechnet. |
+| **Upgrade** | ab heute | Heute die Differenz für den Rest der Periode, danach der neue Preis. |
+| **Downgrade** | ab der nächsten Verlängerung | Bis dahin behalten Sie alles, es wird nichts berechnet. |
 | **In der Testphase** | ab heute | Es wird nichts berechnet. |
-
-Einen geplanten Downgrade nehmen Sie mit **… behalten** zurück. Geht die Zahlung beim Upgrade nicht durch, bleibt Ihr Plan, wie er ist.
-
-<Note>
-  Wechseln Sie in einen kleineren Plan, pausieren Verbindungen über dem Limit. Gelöscht wird nichts.
-</Note>
-
-## Monatlich oder jährlich
-
-Unter **Monatlich oder jährlich** stellen Sie auf jährliche Zahlung um und sparen 15%. Sie zahlen das Jahr im Voraus. Der ungenutzte Teil des laufenden Monats wird angerechnet.
-
-Zurück zu monatlich geht mit **Bei Verlängerung zurück zu monatlich**. Es gilt ab der nächsten Verlängerung.
-
-<Warning>
-  Ein Jahresplan läuft bis zum Ende des bezahlten Jahres. Eine Kündigung gilt auf dieses Datum, ohne Rückerstattung.
-</Warning>
-
-## Rechnungen und Zahlungsart
-
-Unter **Zahlung und Rechnungen** öffnen Sie das sichere Stripe-Portal: Rechnungen herunterladen, Karte ändern, Rechnungsadresse anpassen. Die Rechnungsangaben ändern Sie auch unter **Mein Konto › Rechnung**. [Mein Konto](/konto/einstellungen)
-
-## Wenn eine Zahlung nicht durchgeht
-
-Sie erhalten eine E-Mail «Ihre Lucelabs-Zahlung ist nicht durchgegangen», und unter **Abo & Rechnungen** erscheint ein Hinweis. Ihr Assistent läuft vorerst weiter. Klicken Sie auf **Zahlungsart aktualisieren**. Es dauert eine Minute.
-
-<Warning>
-  Bleibt die Zahlung offen, kann Ihr Plan enden.
-</Warning>
 
 ## Kündigen
 
@@ -64,12 +36,43 @@ Sie erhalten eine E-Mail «Ihre Lucelabs-Zahlung ist nicht durchgegangen», und 
     Unter **Abo & Rechnungen › Abo kündigen** auf **Abonnement kündigen**, dann **Auf Periodenende kündigen**.
   </Step>
   <Step title="Bis zum Ende nutzen">
-    Ihr Abo bleibt bis zum Ende der bezahlten Zeit voll aktiv. Danach erscheint Ihr Assistent nicht mehr auf Ihrer Website. Es wird nichts mehr abgebucht.
+    Ihr Abo bleibt bis zum Ende der bezahlten Zeit voll aktiv. Danach erscheint Ihr Assistent nicht mehr auf Ihrer Website, und es wird nichts mehr abgebucht.
   </Step>
 </Steps>
 
-Bis zu diesem Datum können Sie mit **Abonnement fortsetzen** alles rückgängig machen. Bezahlte Monate werden nicht anteilig zurückerstattet.
+Bis zu diesem Datum machen Sie mit **Abonnement fortsetzen** alles rückgängig. Bezahlte Monate werden nicht anteilig zurückerstattet.
 
-Wird Ihr Plan von Lucelabs verwaltet und per Rechnung bezahlt, schreiben Sie uns für Änderungen oder eine Kündigung.
+## Gut zu wissen
 
-Die genauen Bedingungen stehen in den [AGB](https://lucelabs.ch/terms/).
+<AccordionGroup>
+  <Accordion title="Promo-Code und Partner-Code">
+    Der Rabatt eines Promo-Codes gilt für die erste Rechnung und wird beim Bezahlen abgezogen. Promo-Codes gelten nur für neue Kundinnen und Kunden.
+
+    Mit einem bezahlten Plan können Sie unter **Lucelabs empfehlen** einen eigenen Partner-Code anfragen. Neue Kunden erhalten damit einen Rabatt, Sie eine Gutschrift auf Ihre nächste Rechnung. Wir prüfen jede Anfrage persönlich.
+  </Accordion>
+  <Accordion title="Downgrade zurücknehmen oder Upgrade fehlgeschlagen">
+    Einen geplanten Downgrade nehmen Sie mit **… behalten** zurück. Geht die Zahlung beim Upgrade nicht durch, bleibt Ihr Plan, wie er ist. Bei einem kleineren Plan pausieren Verbindungen über dem Limit. Gelöscht wird nichts.
+  </Accordion>
+  <Accordion title="Monatlich oder jährlich">
+    Unter **Monatlich oder jährlich** stellen Sie auf jährliche Zahlung um und sparen 15%. Sie zahlen das Jahr im Voraus, der ungenutzte Teil des laufenden Monats wird angerechnet. Zurück zu monatlich geht mit **Bei Verlängerung zurück zu monatlich**, ab der nächsten Verlängerung.
+
+    Ein Jahresplan läuft bis zum Ende des bezahlten Jahres. Eine Kündigung gilt auf dieses Datum, ohne Rückerstattung.
+  </Accordion>
+  <Accordion title="Rechnungen und Zahlungsart">
+    Unter **Zahlung und Rechnungen** öffnen Sie das sichere Stripe-Portal: Rechnungen herunterladen, Karte ändern, Rechnungsadresse anpassen. Die Rechnungsangaben ändern Sie auch unter **Mein Konto › Rechnung**. [Mein Konto](/konto/einstellungen)
+  </Accordion>
+  <Accordion title="Plan von Lucelabs verwaltet, per Rechnung">
+    Schreiben Sie uns für Änderungen oder eine Kündigung.
+  </Accordion>
+  <Accordion title="Bedingungen">
+    Die genauen Bedingungen stehen in den [AGB](https://lucelabs.ch/terms/).
+  </Accordion>
+</AccordionGroup>
+
+## Wenn etwas nicht klappt
+
+<AccordionGroup>
+  <Accordion title="Eine Zahlung ist nicht durchgegangen">
+    Sie erhalten eine E-Mail «Ihre Lucelabs-Zahlung ist nicht durchgegangen», und unter **Abo & Rechnungen** erscheint ein Hinweis. Ihr Assistent läuft vorerst weiter. Klicken Sie auf **Zahlungsart aktualisieren**. Es dauert eine Minute. Bleibt die Zahlung offen, kann Ihr Plan enden.
+  </Accordion>
+</AccordionGroup>
